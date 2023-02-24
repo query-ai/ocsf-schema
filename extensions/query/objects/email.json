@@ -1,0 +1,24 @@
+{
+  "caption": "Email",
+  "description": "The Email object describes the email metadata such as sender, recipients, and direction.",
+  "name": "email",
+  "extends": "email",
+  "observable": 22,
+  "attributes": {
+    "cc": {
+      "requirement": "optional"
+    },
+    "delivered_to": {
+      "requirement": "optional"
+    },
+    "from": {
+      "requirement": "required"
+    },
+    "reply_to": {
+      "requirement": "recommended"
+    },
+    "to": {
+      "requirement": "required"
+    }
+  }
+}

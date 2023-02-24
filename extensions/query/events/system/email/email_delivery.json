@@ -1,0 +1,33 @@
+{
+  "description": "Email Delivery events report the delivery status of emails.",
+  "extends": "email_activity",
+  "caption": "Email Delivery Activity",
+  "name": "email_delivery_activity",
+  "uid": 0,
+  "attributes": {
+    "$include": "includes/email_delivery.json",
+    "activity_id": {
+      "enum": {
+        "1": {
+          "caption": "Delivered"
+        },
+        "2": {
+          "caption": "Failed"
+        },
+        "3": {
+          "caption": "Temporary Failure"
+        }
+      }
+    },
+    "file": {
+      "description": "The email file attachment.",
+      "group": "primary",
+      "requirement": "required"
+    },
+    "url": {
+      "description": "The URL included in the email content.",
+      "group": "primary",
+      "requirement": "required"
+    }
+  }
+}
