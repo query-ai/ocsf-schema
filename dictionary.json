@@ -2382,6 +2382,11 @@
       "description": "The data describing the DNS resource. The meaning of this data depends on the type and class of the resource record.",
       "type": "string_t"
     },
+    "record_id": {
+      "description": "Unique identifier for record or event",
+      "caption": "Record ID",
+      "type": "string_t"
+    },
     "red_pixel": {
       "caption": "Red Pixel Info",
       "description": "The information pertaining to how a red pixel was transmitted.",

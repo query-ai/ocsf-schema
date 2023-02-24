@@ -6,6 +6,11 @@
   "attributes": {
     "raw_data": {
       "group": "context"
+    },
+    "record_id": {
+      "description": "Unique idenifier for event",
+      "group": "primary",
+      "requirement": "required"
     }
   }
 }
