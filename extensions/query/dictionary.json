@@ -371,6 +371,11 @@
       "description": "The unique identifier of the item that was quarantined or restored from quarantine.",
       "type": "string_t"
     },
+    "raw_data": {
+      "caption": "Raw Data",
+      "description": "The event data as received from the event source.",
+      "type": "json_t"
+    },
     "raw_header": {
       "caption": "Raw Header",
       "description": "The email authentication header.",
