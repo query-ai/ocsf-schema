@@ -1,0 +1,66 @@
+{
+  "caption": "Attribute Dictionary",
+  "description": "The Attribute Dictionary defines schema attributes and includes references to the events and objects in which they are used.",
+  "name": "dictionary",
+  "attributes": {
+    "cc": {
+      "caption": "Cc",
+      "description": "The users having their email address in Cc values, as defined by RFC 5322.",
+      "is_array": true,
+      "type": "user"
+    },
+    "delivered_to": {
+      "caption": "Delivered To",
+      "description": "The user having email address in <strong>Delivered-To</strong> email header field.",
+      "type": "user"
+    },
+    "entity_type_id": {
+      "caption": "Entity Type ID",
+      "description": "The type of entity or object.",
+      "enum": {
+        "0": {
+          "caption": "Unknown"
+        },
+        "1": {
+          "caption": "IP"
+        },
+        "2": {
+          "caption": "Domain"
+        },
+        "3": {
+          "caption": "Url"
+        },
+        "4": {
+          "caption": "Hash"
+        }
+      },
+      "type": "integer_t"
+    },
+    "from": {
+      "caption": "From",
+      "description": "The user having email address in email header From values, as defined by RFC 5322.",
+      "type": "user"
+    },
+    "raw_data": {
+      "caption": "Raw Data",
+      "description": "The event data as received from the event source.",
+      "type": "json_t"
+    },
+    "record_id": {
+      "description": "Unique identifier for record or event",
+      "caption": "Record ID",
+      "type": "string_t"
+    },
+    "reply_to": {
+      "caption": "Reply To",
+      "description": "The user having email address in the email header Reply-To values, as defined by RFC 5322.",
+      "type": "user"
+    },
+    "to": {
+      "caption": "To",
+      "description": "The users having email address in the email header To values, as defined by RFC 5322.",
+      "is_array": true,
+      "type": "user"
+    }
+  }
+}
