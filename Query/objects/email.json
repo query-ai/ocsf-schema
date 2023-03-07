@@ -6,20 +6,11 @@
   "extends": "email",
   "observable": 22,
   "attributes": {
-    "cc": {
+    "recipient_users": {
       "requirement": "optional"
     },
-    "delivered_to": {
+    "sender_users": {
       "requirement": "optional"
-    },
-    "from": {
-      "requirement": "required"
-    },
-    "reply_to": {
-      "requirement": "recommended"
-    },
-    "to": {
-      "requirement": "required"
     }
   }
 }

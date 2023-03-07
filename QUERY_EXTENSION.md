@@ -1,18 +1,13 @@
 
-Query extension is added in Query directory instead of extensions folderso that changes are additive only
+Query extension is added in Query directory instead of extensions folder so that changes are additive only
 and can be applied to other extensions with minimal change
 
 ## Extending the Schema
 
-Extensions are additional categories, event classes, attributes, objects or profiles. The Open
-Cybersecurity Schema Framework can be extended by adding new attributes, objects, categories
-and event classes. A schema is the aggregation of core schema entities and extensions.
-Extensions allow a particular vendor or customer to create a new schema or augment an existing
-schema. Extensions can also be used to factor out non-essential schema domains keeping a
-schema small. 
-
 Query extension can be use to extend events, objects, attributes of any of the namespace schema.
 namespace is an optional attribute in events, objects, includes which can be added to extend an extension's schema.
+Query Extensions have additional categories, event classes, attributes, objects or profiles. 
+Existing categories, events, attributes, objects or profile can also be modified although we should minimize it for better forward compatibility.
 
 
 | Name              | Description                                                               |
