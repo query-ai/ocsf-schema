@@ -3,28 +3,6 @@
   "description": "The Attribute Dictionary defines schema attributes and includes references to the events and objects in which they are used.",
   "name": "dictionary",
   "attributes": {
-    "entity_type_id": {
-      "caption": "Entity Type ID",
-      "description": "The type of entity or object.",
-      "enum": {
-        "0": {
-          "caption": "Unknown"
-        },
-        "1": {
-          "caption": "IP"
-        },
-        "2": {
-          "caption": "Domain"
-        },
-        "3": {
-          "caption": "Url"
-        },
-        "4": {
-          "caption": "Hash"
-        }
-      },
-      "type": "integer_t"
-    },
     "raw_data": {
       "caption": "Raw Data",
       "description": "The event data as received from the event source.",
