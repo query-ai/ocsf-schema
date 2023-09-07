@@ -23,10 +23,16 @@ the endpoint.
 This relationship has been discussed in the OCSF Slack workspace; while it
 seems to have buy-in, it hasn't been implemented.
 
+Note: We should continue to map IP and hostname to observables. Observables
+should represent point-in-time IP and hostname information; named relationships
+should represent current state information, perhaps by way of identifiers like
+CrowdStrike's `agent_id`.
+
 
 ## Positive Consequences
 
 We will be able to better present and search on this very relevant information.
+
 
 ## Negative Consequences
 
@@ -35,14 +41,13 @@ OCSF may answer this need differently in the future. This seems unlikely.
 
 ## Alternatives Considered
 
-We considered mapping IP and hostname to observables, but decided against it
+We considered _only_ mapping IP and hostname to observables, but decided against it
 because: 
 
 1. We don't currently show observables in results†. 
 2. OCSF encourages mapping "primary" data from events to named relationships.
 3. The device implicated in an endpoint security finding is highly relevant and
    warrants a named relationship.
-4. This will better facilitate searching and joining with devices.
 
 
 _† There is something of a hack in play to search by observables that makes it
