@@ -1,0 +1,65 @@
+{
+	"description": "Insights from threat intelligence platforms about files",
+	"caption": "File Threat Intelligence",
+	"name": "file_intelligence",
+	"attributes": {
+		"fingerprints": {
+			// Inherits is_array: true and type: fingerprint from attribute dictionary
+			"description": "An array of known fingerprints for the file.",
+			"requirement": "optional",
+		},
+		"filenames": {
+			// Should be defined in query/dictionary.json
+			"description": "The names a file is known by.",
+			"requirement": "optional",
+			"type": "string_t",
+			"is_array": true,
+		},
+		"details": {
+			// Renamed from Mahesh's 'description' b/c description is used by the metaschema and I'm not sure
+			// if it will break anything. Plus this name is already in the dictionary and sticking to OCSF 
+			// convention is good.
+			"description": "Details about the file."
+			"requirement": "optional",
+		},
+		"vendor_name": {
+			// Defined in attribute dictionary
+			"description": "The vendor that provided the intelligence.",
+			"requirement": "optional",
+		},
+		"reputations": {
+			// Need to copy OCSF 1.0 reputation definition to Query extension for now
+			"description": "Reputation score as reported by provider",
+			"requirement": "optional",
+			"is_array": true,
+			"type": "reputation", 
+		},
+		"findings": {
+			// Should be defined in query/dictionary.json
+			"description": "The findings from threat intelligence platforms",
+			"requirement": "optional",
+			"type": "finding",
+			"is_array": true,
+		},
+		"labels": {
+			// type and is_array are inherited from attribute dictionary
+			"description": "The labels or tags in the intelligence."
+			"requirement": "optional",
+		},
+		"first_seen_time": {
+			// Defined in attribute dictionary
+			"requirement": "optional",
+		},
+		"last_seen_time": {
+			// Defined in attribute dictionary
+			"requirement": "optional",
+		},
+		"references": {
+			// Should be defined in query/dictionary.json
+			"caption": "Additional references for more information.",
+			"type": "url",
+			"is_array": true,
+			"requirement": "optional",
+		},
+	}
+}
