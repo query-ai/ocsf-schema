@@ -23,6 +23,26 @@
       "caption": "Sender Users",
       "description": "The user who sent the email",
       "type": "user"
-    }
+    },
+		"references": {
+			"caption": "Additional references for more information.",
+			"type": "string_t",
+			"is_array": true,
+		},
+		"reputations": {
+			"description": "Reputation score as reported by provider",
+			"is_array": true,
+			"type": "reputation", 
+		},
+		"findings": {
+			"description": "The findings from threat intelligence platforms",
+			"type": "finding",
+			"is_array": true,
+		},
+		"filenames": {
+			"description": "The names a file is known by.",
+			"type": "string_t",
+			"is_array": true,
+		},
   }
 }
