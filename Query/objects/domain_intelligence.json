@@ -1,9 +1,17 @@
 {
-	"description": "Insights from threat intelligence platforms about IP Addresses",
-	"caption": "IP Threat Intelligence",
-	"name": "ip_intelligence",
+	"description": "Insights from threat intelligence platforms about domains",
+	"caption": "Domain Threat Intelligence",
+	"name": "domain_intelligence",
 	"attributes": {
-
+		"domain": {
+			"requirement": "optional",
+		},
+		"domain_info": {
+			"requirement": "optional",
+		},
+		"answers": {
+			"requirement": "optional",
+		},
 		"labels": {
 			"description": "The labels or tags in the intelligence."
 			"requirement": "optional",
@@ -12,23 +20,8 @@
 			"description": "Reputation score as reported by provider",
 			"requirement": "optional",
 		},
-		"location": {
-			"requirement": "optional",
-		},
-		"ip": {
-			"requirement": "optional",
-		},
-		"subnet": {
-			"requirement": "optional",
-		},
-		"asn": {
-			"requirement": "optional",
-		},
-		"as_owner": {
-			"requirement": "optional",
-		},
 		"details": {
-			"description": "Details about the IP address."
+			"description": "Details about the domain."
 			"requirement": "optional",
 		},
 		"vendor_name": {
