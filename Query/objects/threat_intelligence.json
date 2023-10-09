@@ -2,7 +2,7 @@
     "description": "Insights from threat intelligence platforms",
     "caption": "Threat Intelligence",
     "name": "threat_intelligence",
-    "namespace": "root",
+    "extends": "object",
     "attributes": {
       "provider": {
         "description": "Threat intelligence data provider name e.g. AlienVaultOTX",

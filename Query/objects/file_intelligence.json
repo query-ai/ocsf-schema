@@ -5,41 +5,41 @@
 	"attributes": {
 		"fingerprints": {
 			"description": "An array of known fingerprints for the file.",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"filenames": {
 			"description": "The names a file is known by.",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"details": {
-			"description": "Details about the file."
-			"requirement": "optional",
+			"description": "Details about the file.",
+			"requirement": "optional"
 		},
 		"vendor_name": {
 			"description": "The vendor that provided the intelligence.",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"reputations": {
 			"description": "Reputation score as reported by provider",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"findings": {
 			"description": "The findings from threat intelligence platforms",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"labels": {
-			"description": "The labels or tags in the intelligence."
-			"requirement": "optional",
+			"description": "The labels or tags in the intelligence.",
+			"requirement": "optional"
 		},
 		"first_seen_time": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"last_seen_time": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"references": {
 			"caption": "Additional references for more information.",
-			"requirement": "optional",
-		},
+			"requirement": "optional"
+		}
 	}
 }

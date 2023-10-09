@@ -5,43 +5,43 @@
 	"attributes": {
 
 		"labels": {
-			"description": "The labels or tags in the intelligence."
-			"requirement": "optional",
+			"description": "The labels or tags in the intelligence.",
+			"requirement": "optional"
 		},
 		"reputations": {
 			"description": "Reputation score as reported by provider",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"location": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"ip": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"subnet": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"asn": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"as_owner": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"details": {
-			"description": "Details about the IP address."
-			"requirement": "optional",
+			"description": "Details about the IP address.",
+			"requirement": "optional"
 		},
 		"vendor_name": {
 			"description": "The vendor that provided the intelligence.",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"findings": {
 			"description": "The findings from threat intelligence platforms",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"references": {
 			"caption": "Additional references for more information.",
-			"requirement": "optional",
-		},
+			"requirement": "optional"
+		}
 	}
 }

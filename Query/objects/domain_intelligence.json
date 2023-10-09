@@ -4,37 +4,37 @@
 	"name": "domain_intelligence",
 	"attributes": {
 		"domain": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"domain_info": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"answers": {
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"labels": {
-			"description": "The labels or tags in the intelligence."
-			"requirement": "optional",
+			"description": "The labels or tags in the intelligence.",
+			"requirement": "optional"
 		},
 		"reputations": {
 			"description": "Reputation score as reported by provider",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"details": {
-			"description": "Details about the domain."
-			"requirement": "optional",
+			"description": "Details about the domain.",
+			"requirement": "optional"
 		},
 		"vendor_name": {
 			"description": "The vendor that provided the intelligence.",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"findings": {
 			"description": "The findings from threat intelligence platforms",
-			"requirement": "optional",
+			"requirement": "optional"
 		},
 		"references": {
 			"caption": "Additional references for more information.",
-			"requirement": "optional",
-		},
+			"requirement": "optional"
+		}
 	}
 }
