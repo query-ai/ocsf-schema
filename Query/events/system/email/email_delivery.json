@@ -1,7 +1,6 @@
 {
   "description": "Email Delivery events report the delivery status of emails.",
-  "namespace": "dev",
-  "extends": "email_delivery_activity",
+  "extends": ["dev", "email_delivery_activity"],
   "caption": "Email Delivery Activity",
   "name": "email_delivery_activity",
   "uid": 0,

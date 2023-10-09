@@ -6,7 +6,7 @@
   "name": "security_finding",
   "attributes": {
 		"device": {
-			"requirement": "optional",
-		},
-	},
+			"requirement": "optional"
+		}
+	}
 }
