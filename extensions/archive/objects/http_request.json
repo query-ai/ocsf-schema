@@ -1,0 +1,24 @@
+{
+    "constraints": {
+        "at_least_one": [
+            "user_agent",
+            "url",
+            "hostname"
+        ]
+    },
+    "attributes": {
+        "http_method": {
+            "requirement": "recommended"
+        },
+        "prefix": {
+            "description": "Domain prefix.",
+            "requirement": "optional",
+            "caption": "Prefix",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        }
+    }
+}

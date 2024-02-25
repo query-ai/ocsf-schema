@@ -1,0 +1,71 @@
+{
+    "attributes": {
+        "category_uid": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "network_interface": {
+            "group": "primary",
+            "requirement": "required",
+            "caption": "Network Interface",
+            "description": "The network interface that is associated with the device.",
+            "type": "network_interface",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "class_uid": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
+                }
+            }
+        },
+        "type_uid": {
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        }
+    }
+}

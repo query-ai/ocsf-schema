@@ -1,0 +1,11 @@
+{
+    "attributes": {
+        "type_id": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        }
+    }
+}

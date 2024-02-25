@@ -1,0 +1,80 @@
+{
+    "attributes": {
+        "device": {
+            "requirement": "recommended",
+            "caption": "Device",
+            "description": "The device that reported the event.",
+            "type": "device",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "category_uid": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "class_uid": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "actor": {
+            "requirement": "optional",
+            "caption": "Actor",
+            "description": "The actor that performed the operation or the action.",
+            "type": "actor",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
+                }
+            }
+        },
+        "type_uid": {
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from {patch.old_version} to {patch.new_version} on {patch.timestamp}"
+            }
+        }
+    }
+}
