@@ -1,0 +1,72 @@
+{
+    "attributes": {
+        "name": {
+            "name": "file_name_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            },
+            "type": "string_t"
+        },
+        "type_id": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "fingerprints": {
+            "requirement": "recommended",
+            "caption": "Fingerprints",
+            "description": "An array of digital fingerprint objects.",
+            "is_array": true,
+            "type": "fingerprint",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "modifier": {
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "accessor": {
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "owner": {
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "creator": {
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "parent_folder": {
+            "type": "path_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        },
+        "path": {
+            "type": "path_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "attributes": {
+        "version": {
+            "default": "1.0.0",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+            }
+        }
+    }
+}

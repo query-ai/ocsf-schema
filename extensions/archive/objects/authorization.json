@@ -1,0 +1,10 @@
+{
+    "attributes": {
+        "policy": {
+            "requirement": "optional"
+        },
+        "decision": {
+            "requirement": "optional"
+        }
+    }
+}
