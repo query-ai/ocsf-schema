@@ -1,5 +1,35 @@
 {
     "attributes": {
+        "rule": {
+            "description": "The primary rule that triggered the policy event.",
+            "requirement": "recommended",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "type": {
+            "description": "The type of the policy.",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "rules": {
+            "description": "Additional rules that triggered the policy event.",
+            "requirement": "recommended",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "label": {
+            "requirement": "recommended",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
         "type_id": {
             "description": "The policy type identifier; one of:",
             "requirement": "required",
@@ -75,44 +105,14 @@
             },
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "type": {
-            "description": "The type of the policy.",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "effective_time": {
             "requirement": "recommended",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "rule": {
-            "description": "The primary rule that triggered the policy event.",
-            "requirement": "recommended",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "rules": {
-            "description": "Additional rules that triggered the policy event.",
-            "requirement": "recommended",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "label": {
-            "requirement": "recommended",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         }
     }

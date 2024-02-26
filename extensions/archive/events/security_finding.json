@@ -1,10 +1,20 @@
 {
     "attributes": {
-        "class_uid": {
-            "default": 0,
+        "disposition": {
+            "requirement": "optional",
+            "caption": "Disposition",
+            "description": "The event disposition name, as defined by the disposition_id.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "data": {
@@ -14,7 +24,7 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "disposition_id": {
@@ -78,56 +88,38 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "category_uid": {
             "default": 0,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "disposition": {
-            "requirement": "optional",
-            "caption": "Disposition",
-            "description": "The event disposition name, as defined by the disposition_id.",
-            "type": "string_t",
+        "class_uid": {
+            "default": 0,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "activity_id": {
             "enum": {
-                "1": {
-                    "description": "A security finding is generated."
-                },
                 "2": {
                     "description": "A security finding is updated."
+                },
+                "1": {
+                    "description": "A security finding is generated."
                 }
             }
         },
-        "confidence": {
+        "type_uid": {
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            },
-            "group": "classification"
-        },
-        "resources": {
-            "type": "resource",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "severity_id": {
@@ -137,11 +129,19 @@
                 }
             }
         },
-        "type_uid": {
-            "type": "integer_t",
+        "confidence": {
+            "group": "classification",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            },
+            "type": "integer_t"
+        },
+        "resources": {
+            "type": "resource",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         }
     }

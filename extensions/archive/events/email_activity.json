@@ -1,10 +1,10 @@
 {
     "attributes": {
-        "category_uid": {
+        "class_uid": {
             "default": 0,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "confidence": {
@@ -15,35 +15,7 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "device": {
-            "group": "primary",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "actor": {
-            "group": "primary",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "data": {
@@ -53,19 +25,41 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "disposition_id": {
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "category_uid": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "actor": {
+            "group": "primary",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "device": {
+            "group": "primary",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "severity_id": {
             "enum": {
-                "10": {
-                    "description": "Requires reboot to finish the operation."
-                },
-                "15": {
-                    "description": "Marked with extended attributes."
-                },
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
+                "0": {
+                    "description": "The event severity is not known."
                 }
             }
         },
@@ -73,13 +67,19 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "severity_id": {
+        "disposition_id": {
             "enum": {
-                "0": {
-                    "description": "The event severity is not known."
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                },
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
                 }
             }
         }

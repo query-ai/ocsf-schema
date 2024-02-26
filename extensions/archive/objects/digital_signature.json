@@ -7,7 +7,7 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "fingerprints": {
@@ -18,17 +18,7 @@
             "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "company_name": {
-            "requirement": "required",
-            "caption": "Company Name",
-            "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "issuer_name": {
@@ -38,7 +28,17 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "company_name": {
+            "requirement": "required",
+            "caption": "Company Name",
+            "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         }
     }

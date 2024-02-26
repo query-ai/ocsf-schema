@@ -1,47 +1,5 @@
 {
     "attributes": {
-        "timezone_offset": {
-            "requirement": "recommended",
-            "caption": "Timezone Offset",
-            "description": "The number of minutes that the reported event <code>time</code> is ahead or behind UTC, in the range -1,080 to +1,080.",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "actor": {
-            "group": "primary",
-            "requirement": "optional",
-            "caption": "Actor",
-            "description": "The actor that performed the operation or the action.",
-            "type": "actor",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "type_name": {
-            "requirement": "optional",
-            "caption": "Type Name",
-            "description": "The event type name, as defined by the type_uid.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "status": {
-            "group": "primary",
-            "requirement": "optional",
-            "caption": "Status",
-            "description": "The event status, as reported by the event source.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
         "count": {
             "caption": "Count",
             "default": 1,
@@ -49,75 +7,7 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "activity_name": {
-            "requirement": "optional",
-            "caption": "Activity",
-            "description": "The event activity name, as defined by the activity_id.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "severity": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Severity",
-            "description": "The event severity, as defined by the event source.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "category_uid": {
-            "enum": {
-                "-1": {
-                    "caption": "Other"
-                }
-            },
-            "requirement": "required",
-            "caption": "Category ID",
-            "default": 0,
-            "description": "The category unique identifier of the event.",
-            "sibling": "category_name",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "unmapped": {
-            "group": "context",
-            "caption": "Unmapped Data",
-            "description": "The attributes that are not mapped to the event schema. The names and values of those attributes are specific to the event source.",
-            "type": "object",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "disposition": {
-            "requirement": "optional",
-            "caption": "Disposition",
-            "description": "The event disposition name, as defined by the disposition_id.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "status_detail": {
-            "group": "primary",
-            "caption": "Status Details",
-            "description": "The status details contains additional information about the event outcome.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "duration": {
@@ -126,28 +16,67 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "malware": {
+        "record_id": {
+            "description": "Unique idenifier for the event",
+            "group": "primary",
+            "requirement": "required",
+            "caption": "Record ID",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "status_id": {
+            "group": "primary",
             "requirement": "recommended",
-            "caption": "Malware",
-            "description": "The list of malware identified by a finding.",
-            "is_array": true,
-            "type": "malware",
+            "caption": "Status ID",
+            "description": "The normalized identifier of the event status.",
+            "enum": {
+                "-1": {
+                    "caption": "Other",
+                    "description": "The event status is not mapped. See the <code>status</code> attribute, which contains a data source specific value."
+                },
+                "0": {
+                    "caption": "Unknown"
+                },
+                "1": {
+                    "caption": "Success"
+                },
+                "2": {
+                    "caption": "Failure"
+                }
+            },
+            "sibling": "status",
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
+        "device": {
+            "group": "primary",
+            "requirement": "recommended",
+            "caption": "Device",
+            "description": "The device that reported the event.",
+            "type": "device",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "metadata": {
+            "group": "context",
+            "requirement": "required",
+            "caption": "Metadata",
+            "description": "The metadata associated with the event.",
+            "type": "metadata",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "message": {
@@ -158,7 +87,191 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "category_name": {
+            "requirement": "optional",
+            "caption": "Category",
+            "description": "The event category name, as defined by category_uid value.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "attacks": {
+            "requirement": "optional",
+            "caption": "Attacks",
+            "description": "An array of attacks associated with an event.",
+            "is_array": true,
+            "type": "attack",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "disposition": {
+            "requirement": "optional",
+            "caption": "Disposition",
+            "description": "The event disposition name, as defined by the disposition_id.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "actor": {
+            "group": "primary",
+            "requirement": "optional",
+            "caption": "Actor",
+            "description": "The actor that performed the operation or the action.",
+            "type": "actor",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "timezone_offset": {
+            "requirement": "recommended",
+            "caption": "Timezone Offset",
+            "description": "The number of minutes that the reported event <code>time</code> is ahead or behind UTC, in the range -1,080 to +1,080.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "status": {
+            "group": "primary",
+            "requirement": "optional",
+            "caption": "Status",
+            "description": "The event status, as reported by the event source.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "enrichments": {
+            "group": "context",
+            "caption": "Enrichments",
+            "description": "The additional information from an external data source, which is associated with the event. For example add location information for the IP address in the DNS answers:</p><code>[{\"name\": \"answers.ip\", \"value\": \"92.24.47.250\", \"type\": \"location\", \"data\": {\"city\": \"Socotra\", \"continent\": \"Asia\", \"coordinates\": [-25.4153, 17.0743], \"country\": \"YE\", \"desc\": \"Yemen\"}}]</code>",
+            "is_array": true,
+            "type": "enrichment",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "end_time": {
+            "description": "The end time of a time period, or the time of the most recent event included in the aggregate event.",
+            "caption": "End Time",
+            "type": "timestamp_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "activity_name": {
+            "requirement": "optional",
+            "caption": "Activity",
+            "description": "The event activity name, as defined by the activity_id.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "severity": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Severity",
+            "description": "The event severity, as defined by the event source.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "malware": {
+            "requirement": "recommended",
+            "caption": "Malware",
+            "description": "The list of malware identified by a finding.",
+            "is_array": true,
+            "type": "malware",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "type_name": {
+            "requirement": "optional",
+            "caption": "Type Name",
+            "description": "The event type name, as defined by the type_uid.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "class_uid": {
+            "enum": {
+                "-1": {
+                    "caption": "Other"
+                }
+            },
+            "requirement": "required",
+            "caption": "Class ID",
+            "default": 0,
+            "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
+            "sibling": "class_name",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "activity_id": {
+            "enum": {
+                "1": {
+                    "caption": "Delivered"
+                },
+                "2": {
+                    "caption": "Failed"
+                },
+                "3": {
+                    "caption": "Temporary Failure"
+                },
+                "-1": {
+                    "caption": "Other",
+                    "description": "The event activity is not mapped."
+                },
+                "0": {
+                    "caption": "Unknown",
+                    "description": "The event activity is unknown."
+                }
+            },
+            "$include": "enums/defaults.json",
+            "requirement": "required",
+            "caption": "Activity ID",
+            "description": "The normalized identifier of the activity that triggered the event.",
+            "sibling": "activity_name",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "disposition_id": {
@@ -222,56 +335,43 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "status_id": {
-            "group": "primary",
-            "requirement": "recommended",
-            "caption": "Status ID",
-            "description": "The normalized identifier of the event status.",
+        "cloud": {
+            "requirement": "required",
+            "caption": "Cloud",
+            "description": "Describes details about the Cloud enviroment where the event was originally created or logged.",
+            "type": "cloud",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "start_time": {
+            "description": "The start time of a time period, or the time of the least recent event included in the aggregate event.",
+            "caption": "Start Time",
+            "type": "timestamp_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "category_uid": {
             "enum": {
                 "-1": {
-                    "caption": "Other",
-                    "description": "The event status is not mapped. See the <code>status</code> attribute, which contains a data source specific value."
-                },
-                "0": {
-                    "caption": "Unknown"
-                },
-                "1": {
-                    "caption": "Success"
-                },
-                "2": {
-                    "caption": "Failure"
+                    "caption": "Other"
                 }
             },
-            "sibling": "status",
+            "requirement": "required",
+            "caption": "Category ID",
+            "default": 0,
+            "description": "The category unique identifier of the event.",
+            "sibling": "category_name",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "attacks": {
-            "requirement": "optional",
-            "caption": "Attacks",
-            "description": "An array of attacks associated with an event.",
-            "is_array": true,
-            "type": "attack",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "status_code": {
@@ -281,35 +381,50 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "class_uid": {
-            "enum": {
-                "-1": {
-                    "caption": "Other"
-                }
-            },
+        "observables": {
+            "group": "primary",
+            "requirement": "optional",
+            "caption": "Observables",
+            "description": "The observables associated with the event.",
+            "is_array": true,
+            "type": "observable",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "type_uid": {
             "requirement": "required",
-            "caption": "Class ID",
-            "default": 0,
-            "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
-            "sibling": "class_name",
+            "caption": "Type ID",
+            "description": "The event type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+            "sibling": "type_name",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "enrichments": {
-            "group": "context",
-            "caption": "Enrichments",
-            "description": "The additional information from an external data source, which is associated with the event. For example add location information for the IP address in the DNS answers:</p><code>[{\"name\": \"answers.ip\", \"value\": \"92.24.47.250\", \"type\": \"location\", \"data\": {\"city\": \"Socotra\", \"continent\": \"Asia\", \"coordinates\": [-25.4153, 17.0743], \"country\": \"YE\", \"desc\": \"Yemen\"}}]</code>",
-            "is_array": true,
-            "type": "enrichment",
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "time": {
+            "requirement": "required",
+            "caption": "Event Time",
+            "description": "The normalized event occurrence time.",
+            "type": "timestamp_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "severity_id": {
@@ -355,59 +470,7 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "type_uid": {
-            "requirement": "required",
-            "caption": "Type ID",
-            "description": "The event type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
-            "sibling": "type_name",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "cloud": {
-            "requirement": "required",
-            "caption": "Cloud",
-            "description": "Describes details about the Cloud enviroment where the event was originally created or logged.",
-            "type": "cloud",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "start_time": {
-            "description": "The start time of a time period, or the time of the least recent event included in the aggregate event.",
-            "caption": "Start Time",
-            "type": "timestamp_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "metadata": {
-            "group": "context",
-            "requirement": "required",
-            "caption": "Metadata",
-            "description": "The metadata associated with the event.",
-            "type": "metadata",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "device": {
-            "group": "primary",
-            "requirement": "recommended",
-            "caption": "Device",
-            "description": "The device that reported the event.",
-            "type": "device",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "class_name": {
@@ -417,49 +480,27 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "record_id": {
-            "description": "Unique idenifier for the event",
+        "unmapped": {
+            "group": "context",
+            "caption": "Unmapped Data",
+            "description": "The attributes that are not mapped to the event schema. The names and values of those attributes are specific to the event source.",
+            "type": "object",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "status_detail": {
             "group": "primary",
-            "requirement": "required",
-            "caption": "Record ID",
+            "caption": "Status Details",
+            "description": "The status details contains additional information about the event outcome.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "activity_id": {
-            "enum": {
-                "1": {
-                    "caption": "Delivered"
-                },
-                "2": {
-                    "caption": "Failed"
-                },
-                "3": {
-                    "caption": "Temporary Failure"
-                },
-                "-1": {
-                    "caption": "Other",
-                    "description": "The event activity is not mapped."
-                },
-                "0": {
-                    "caption": "Unknown",
-                    "description": "The event activity is unknown."
-                }
-            },
-            "$include": "enums/defaults.json",
-            "requirement": "required",
-            "caption": "Activity ID",
-            "description": "The normalized identifier of the activity that triggered the event.",
-            "sibling": "activity_name",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "raw_data": {
@@ -469,48 +510,7 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "observables": {
-            "group": "primary",
-            "requirement": "optional",
-            "caption": "Observables",
-            "description": "The observables associated with the event.",
-            "is_array": true,
-            "type": "observable",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "end_time": {
-            "description": "The end time of a time period, or the time of the most recent event included in the aggregate event.",
-            "caption": "End Time",
-            "type": "timestamp_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "time": {
-            "requirement": "required",
-            "caption": "Event Time",
-            "description": "The normalized event occurrence time.",
-            "type": "timestamp_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "category_name": {
-            "requirement": "optional",
-            "caption": "Category",
-            "description": "The event category name, as defined by category_uid value.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         }
     },

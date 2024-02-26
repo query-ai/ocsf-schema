@@ -1,23 +1,13 @@
 {
     "attributes": {
-        "ja3s_string": {
+        "ja3_string": {
             "requirement": "recommended",
-            "caption": "JAS3 String",
-            "description": "The JAS3 string.",
+            "caption": "JA3 String",
+            "description": "The JA3 string.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
-            }
-        },
-        "ja3s_fingerprint": {
-            "requirement": "recommended",
-            "caption": "JAS3 Fingerprint",
-            "description": "The fingerprint of JAS3 string.",
-            "type": "fingerprint",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
         "ja3_fingerprint": {
@@ -27,17 +17,27 @@
             "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         },
-        "ja3_string": {
+        "ja3s_string": {
             "requirement": "recommended",
-            "caption": "JA3 String",
-            "description": "The JA3 string.",
+            "caption": "JAS3 String",
+            "description": "The JAS3 string.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-25 15:57:27.710065"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
+            }
+        },
+        "ja3s_fingerprint": {
+            "requirement": "recommended",
+            "caption": "JAS3 Fingerprint",
+            "description": "The fingerprint of JAS3 string.",
+            "type": "fingerprint",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-26 23:38:38.488600"
             }
         }
     }
