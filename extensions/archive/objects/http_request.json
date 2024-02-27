@@ -1,4 +1,19 @@
 {
+    "attributes": {
+        "http_method": {
+            "requirement": "recommended"
+        },
+        "prefix": {
+            "description": "Domain prefix.",
+            "requirement": "optional",
+            "caption": "Prefix",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+            }
+        }
+    },
     "constraints": {
         "at_least_one": [
             "user_agent",

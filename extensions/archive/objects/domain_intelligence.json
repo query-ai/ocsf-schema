@@ -1,12 +1,12 @@
 {
     "attributes": {
         "domain_info": {
-            "description": "The registration information pertaining to a domain.",
             "type": "domain_info",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:45:44.044815"
-            }
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+            },
+            "description": "The registration information pertaining to a domain."
         }
     }
 }
