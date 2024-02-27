@@ -1,0 +1,34 @@
+{
+    "attributes": {
+        "reg_value_result": {
+            "requirement": "optional",
+            "caption": "Registry Value Result",
+            "description": "The result of the registry value change. It should contain the new values of the changed attributes.",
+            "type": "registry_value",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:45:44.044815"
+            }
+        },
+        "disposition_id": {
+            "enum": {
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                }
+            }
+        },
+        "reg_value": {
+            "type": "registry_value",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:45:44.044815"
+            }
+        }
+    }
+}

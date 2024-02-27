@@ -1,0 +1,9 @@
+{
+    "constraints": {
+        "at_least_one": [
+            "user_agent",
+            "url",
+            "hostname"
+        ]
+    }
+}

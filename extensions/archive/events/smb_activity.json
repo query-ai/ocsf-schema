@@ -1,0 +1,17 @@
+{
+    "attributes": {
+        "disposition_id": {
+            "enum": {
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                }
+            }
+        }
+    }
+}

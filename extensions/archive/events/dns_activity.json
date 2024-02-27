@@ -1,0 +1,35 @@
+{
+    "attributes": {
+        "activity_id": {
+            "enum": {
+                "3": {
+                    "caption": "Query",
+                    "description": "The DNS query request."
+                },
+                "4": {
+                    "caption": "Traffic",
+                    "description": "Network traffic report."
+                },
+                "2": {
+                    "description": "The DNS request was unresolved."
+                },
+                "1": {
+                    "description": "The DNS request was successfully resolved."
+                }
+            }
+        },
+        "disposition_id": {
+            "enum": {
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                }
+            }
+        }
+    }
+}

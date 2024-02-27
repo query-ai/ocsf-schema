@@ -1,0 +1,26 @@
+{
+    "attributes": {
+        "activity_id": {
+            "enum": {
+                "8": {
+                    "description": "A user account was locked out."
+                },
+                "7": {
+                    "description": "A user account was changed."
+                },
+                "6": {
+                    "description": "A user account was deleted."
+                },
+                "5": {
+                    "description": "A user account was disabled."
+                },
+                "2": {
+                    "description": "A user account was enabled."
+                },
+                "1": {
+                    "description": "A user account was created."
+                }
+            }
+        }
+    }
+}
