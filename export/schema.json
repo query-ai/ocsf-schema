@@ -22839,7 +22839,10 @@
           "type": "string_t"
         },
         "device": {
-          "requirement": "optional"
+          "caption": "Device",
+          "description": "An addressable device, computer system or host.",
+          "requirement": "optional",
+          "type": "device"
         },
         "duration": {
           "caption": "Duration",
@@ -29710,7 +29713,11 @@
           "type": "string_t"
         },
         "recipient_users": {
-          "requirement": "optional"
+          "caption": "Recipient Users",
+          "description": "The users receiving the email",
+          "is_array": true,
+          "requirement": "optional",
+          "type": "user"
         },
         "record_id": {
           "caption": "Record ID",
@@ -29726,7 +29733,10 @@
           "type": "email_t"
         },
         "sender_users": {
-          "requirement": "optional"
+          "caption": "Sender Users",
+          "description": "The user who sent the email",
+          "requirement": "optional",
+          "type": "user"
         },
         "size": {
           "caption": "Size",
@@ -37074,13 +37084,16 @@
           "type": "string_t"
         },
         "devices": {
+          "caption": "Devices",
           "description": "The devices related to user.",
-          "requirement": "optional"
+          "is_array": true,
+          "requirement": "optional",
+          "type": "device"
         },
         "domain": {
           "caption": "Domain",
           "description": "The domain where the user is defined. For example: the LDAP or Active Directory domain.",
-          "requirement": "optional",
+          "requirement": "required",
           "type": "string_t"
         },
         "email_addr": {
@@ -37103,7 +37116,10 @@
           "type": "group"
         },
         "last_login_time": {
-          "requirement": "optional"
+          "caption": "Last Login",
+          "description": "The last time when the user logged in.",
+          "requirement": "optional",
+          "type": "timestamp_t"
         },
         "ldap_person": {
           "caption": "LDAP Person",
