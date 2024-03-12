@@ -1,10 +1,17 @@
 {
     "attributes": {
+        "type_id": {
+            "enum": {
+                "300099": {
+                    "caption": "Account Change: Other"
+                }
+            }
+        },
         "count": {
             "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "confidence": {
@@ -15,14 +22,7 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "data": {
@@ -32,35 +32,35 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "activity_id": {
             "enum": {
-                "5": {
-                    "description": "A user account was disabled."
-                },
-                "8": {
-                    "description": "A user account was locked out."
-                },
                 "1": {
                     "description": "A user account was created."
-                },
-                "7": {
-                    "description": "A user account was changed."
                 },
                 "2": {
                     "description": "A user account was enabled."
                 },
+                "5": {
+                    "description": "A user account was disabled."
+                },
                 "6": {
                     "description": "A user account was deleted."
+                },
+                "7": {
+                    "description": "A user account was changed."
+                },
+                "8": {
+                    "description": "A user account was locked out."
+                }
+            }
+        },
+        "class_id": {
+            "enum": {
+                "3001": {
+                    "description": "Account Change events report when specific user account management tasks are performed, such as a user account is created, changed, deleted, renamed, disabled, enabled, locked out or unlocked."
                 }
             }
         },
@@ -69,13 +69,6 @@
                 "0": {
                     "description": "The event severity is not known."
                 }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
             }
         }
     }

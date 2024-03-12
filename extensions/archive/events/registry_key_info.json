@@ -1,10 +1,40 @@
 {
     "attributes": {
-        "class_uid": {
-            "default": 0,
+        "command_uid": {
+            "description": "The unique identifier of the discovery command that pertains to this event.",
+            "group": "primary",
+            "requirement": "required",
+            "caption": "Command UID",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "type_id": {
+            "enum": {
+                "3201199": {
+                    "caption": "Registry Key Info: Other"
+                },
+                "3201200": {
+                    "caption": "Registry Key Info: Unknown"
+                },
+                "3201201": {
+                    "caption": "Registry Key Info: Exists"
+                },
+                "3201202": {
+                    "caption": "Registry Key Info: Partial"
+                }
             }
         },
         "confidence": {
@@ -15,7 +45,22 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "class_id": {
+            "enum": {
+                "32012": {
+                    "caption": "Registry Key Info",
+                    "description": "Registry Key Info events report information about Windows registry keys."
+                }
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "scan_uid": {
@@ -26,42 +71,7 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "command_uid": {
-            "description": "The unique identifier of the discovery command that pertains to this event.",
-            "group": "primary",
-            "requirement": "required",
-            "caption": "Command UID",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "severity_id": {
@@ -71,18 +81,11 @@
                 }
             }
         },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
         "reg_key": {
             "type": "registry_key",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         }
     }

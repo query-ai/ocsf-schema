@@ -1,10 +1,41 @@
 {
     "attributes": {
-        "class_uid": {
-            "default": 0,
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "type_id": {
+            "enum": {
+                "101000": {
+                    "caption": "Resource Activity: Unknown"
+                },
+                "100999": {
+                    "caption": "Resource Activity: Other"
+                },
+                "101001": {
+                    "caption": "Resource Activity: Access"
+                }
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "class_id": {
+            "enum": {
+                "1010": {
+                    "caption": "Resource Activity",
+                    "description": "Resource Activity events report when a process accesses an OS managed resource/object, successful or otherwise."
+                }
             }
         },
         "resource": {
@@ -15,31 +46,7 @@
             "type": "resource",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "confidence": {
@@ -50,7 +57,7 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "disposition_id": {
@@ -58,11 +65,11 @@
                 "14": {
                     "description": "No longer suspicious (re-scored)."
                 },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
-                },
                 "15": {
                     "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
                 }
             }
         },
@@ -71,13 +78,6 @@
                 "0": {
                     "description": "The event severity is not known."
                 }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
             }
         }
     }

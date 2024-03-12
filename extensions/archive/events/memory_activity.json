@@ -4,17 +4,14 @@
             "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+        "type_id": {
+            "enum": {
+                "100399": {
+                    "caption": "Memory Activity: Other"
+                }
             }
         },
         "confidence": {
@@ -25,21 +22,30 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "category_uid": {
-            "default": 0,
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+        "disposition_id": {
+            "enum": {
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                },
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                }
             }
         },
         "severity_id": {
@@ -47,26 +53,6 @@
                 "0": {
                     "description": "The event severity is not known."
                 }
-            }
-        },
-        "disposition_id": {
-            "enum": {
-                "10": {
-                    "description": "Requires reboot to finish the operation."
-                },
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
-                "15": {
-                    "description": "Marked with extended attributes."
-                }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
             }
         }
     }

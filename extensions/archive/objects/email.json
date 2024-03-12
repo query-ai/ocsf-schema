@@ -1,5 +1,15 @@
 {
     "attributes": {
+        "direction": {
+            "description": "The direction of the email, as defined by the <code>direction_id</code> value.",
+            "requirement": "optional",
+            "caption": "Direction",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
         "smtp_hello": {
             "requirement": "recommended",
             "caption": "SMTP Hello",
@@ -7,8 +17,11 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
+        },
+        "subject": {
+            "requirement": "required"
         },
         "direction_id": {
             "description": "The direction of the email relative to the scanning host or organization.</p>Email scanned at an internet gateway might be characterized as inbound to the organization from the Internet, outbound from the organization to the Internet, or internal within the organization. Email scanned at a workstation might be characterized as inbound to, or outbound from the workstation.",
@@ -39,21 +52,8 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
-        },
-        "direction": {
-            "description": "The direction of the email, as defined by the <code>direction_id</code> value.",
-            "requirement": "optional",
-            "caption": "Direction",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "subject": {
-            "requirement": "required"
         }
     }
 }

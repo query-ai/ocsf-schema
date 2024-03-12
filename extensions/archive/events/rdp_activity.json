@@ -1,11 +1,43 @@
 {
     "attributes": {
-        "class_uid": {
-            "default": 0,
+        "type_id": {
+            "enum": {
+                "400099": {
+                    "caption": "Network Activity: Other"
+                },
+                "400102": {
+                    "caption": "Network Activity: Close"
+                },
+                "400105": {
+                    "caption": "SMB Activity: File Overwrite"
+                },
+                "400100": {
+                    "caption": "Network Activity: Unknown"
+                },
+                "400104": {
+                    "caption": "Network Activity: Traffic"
+                },
+                "400101": {
+                    "caption": "Network Activity: Open"
+                },
+                "400106": {
+                    "caption": "SMB Activity: File Overwrite If"
+                },
+                "0": {
+                    "caption": "Unknown",
+                    "description": "The type is unknown."
+                },
+                "400103": {
+                    "caption": "Network Activity: Reset"
+                }
+            },
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            },
+            "default": 0,
+            "sibling": "type"
         },
         "confidence": {
             "group": "classification",
@@ -15,21 +47,43 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+        "class_id": {
+            "enum": {
+                "4002": {
+                    "caption": "HTTP Activity",
+                    "description": "HTTP Activity events report HTTP connection and traffic information."
+                },
+                "4010": {
+                    "caption": "SMTP Activity",
+                    "description": "SMTP Activity events report email communications using the Simple Mail Transfer Protocol (SMTP)."
+                },
+                "4007": {
+                    "caption": "SSH Activity",
+                    "description": "SSH Activity events report remote client connections to a server using the Secure Shell (SSH) Protocol."
+                },
+                "4009": {
+                    "caption": "RFB Activity",
+                    "description": "Remote Frame Buffer Protocol (RFB) Activity events report remote client connections to a server as seen on the network."
+                },
+                "4003": {
+                    "caption": "DNS Activity",
+                    "description": "DNS Activity events report DNS queries and answers as seen on the network."
+                },
+                "4001": {
+                    "caption": "Network Activity",
+                    "description": "Network Activity events report network connection and traffic activity."
+                },
+                "4008": {
+                    "caption": "FTP Activity",
+                    "description": "File Transfer Protocol (FTP) Activity events report file transfers between a server and a client as seen on the network."
+                },
+                "4006": {
+                    "caption": "SMB Activity",
+                    "description": "Server Message Block (SMB) Protocol Activity events report client/server connections sharing resources within the network."
+                }
             }
         },
         "data": {
@@ -39,26 +93,20 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "type_uid": {
-            "type": "integer_t",
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "disposition_id": {
+        "severity_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
-                "15": {
-                    "description": "Marked with extended attributes."
-                },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
+                "0": {
+                    "description": "The event severity is not known."
                 }
             }
         },
@@ -67,21 +115,27 @@
                 "1": {
                     "description": "A new network connection was opened."
                 },
+                "3": {
+                    "description": "The network connection was abnormally terminated or closed by a middle device like firewalls."
+                },
                 "2": {
                     "description": "The network connection was closed."
                 },
                 "4": {
                     "description": "Network traffic report."
-                },
-                "3": {
-                    "description": "The network connection was abnormally terminated or closed by a middle device like firewalls."
                 }
             }
         },
-        "severity_id": {
+        "disposition_id": {
             "enum": {
-                "0": {
-                    "description": "The event severity is not known."
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 }
             }
         }

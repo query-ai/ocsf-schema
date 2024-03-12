@@ -1,5 +1,25 @@
 {
     "attributes": {
+        "serial_number": {
+            "description": "The serial number of the digital signature.",
+            "requirement": "optional",
+            "caption": "Serial Number",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "company_name": {
+            "requirement": "required",
+            "caption": "Company Name",
+            "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
         "issuer_name": {
             "requirement": "optional",
             "caption": "Issuer Name",
@@ -7,7 +27,7 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "fingerprints": {
@@ -18,27 +38,7 @@
             "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "company_name": {
-            "requirement": "required",
-            "caption": "Company Name",
-            "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "serial_number": {
-            "description": "The serial number of the digital signature.",
-            "requirement": "optional",
-            "caption": "Serial Number",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         }
     }

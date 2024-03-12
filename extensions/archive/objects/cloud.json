@@ -1,13 +1,13 @@
 {
     "attributes": {
-        "resource_uid": {
+        "account_type": {
             "requirement": "optional",
-            "caption": "Resource ID",
-            "description": "The unique identifier of a cloud resource. For example, S3 Bucket name, EC2 Instance Id.",
-            "type": "resource_uid_t",
+            "caption": "Account Type",
+            "description": "The user account type, as defined by the event source.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "org_uid": {
@@ -17,17 +17,17 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "account_uid": {
-            "requirement": "recommended",
-            "caption": "Account UID",
-            "description": "The unique identifier of the account(e.g. AWS Account ID).",
-            "type": "string_t",
+        "resource_uid": {
+            "requirement": "optional",
+            "caption": "Resource ID",
+            "description": "The unique identifier of a cloud resource. For example, S3 Bucket name, EC2 Instance Id.",
+            "type": "resource_uid_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "account_type_id": {
@@ -63,17 +63,17 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "account_type": {
-            "requirement": "optional",
-            "caption": "Account Type",
-            "description": "The user account type, as defined by the event source.",
+        "account_uid": {
+            "requirement": "recommended",
+            "caption": "Account UID",
+            "description": "The unique identifier of the account(e.g. AWS Account ID).",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         }
     }

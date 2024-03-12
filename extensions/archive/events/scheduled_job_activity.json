@@ -1,34 +1,31 @@
 {
     "attributes": {
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+        "type_id": {
+            "enum": {
+                "101104": {
+                    "caption": "Scheduled Job Activity: Enable"
+                },
+                "101105": {
+                    "caption": "Scheduled Job Activity: Disable"
+                },
+                "101100": {
+                    "caption": "Scheduled Job Activity: Unknown"
+                },
+                "101099": {
+                    "caption": "Scheduled Job Activity: Other"
+                },
+                "101101": {
+                    "caption": "Scheduled Job Activity: Create"
+                },
+                "101106": {
+                    "caption": "Scheduled Job Activity: Start"
+                },
+                "101103": {
+                    "caption": "Scheduled Job Activity: Delete"
+                },
+                "101102": {
+                    "caption": "Scheduled Job Activity: Update"
+                }
             }
         },
         "confidence": {
@@ -39,7 +36,32 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "class_id": {
+            "enum": {
+                "1011": {
+                    "caption": "Scheduled Job Activity",
+                    "description": "Scheduled Job Activity events report activities related to scheduled jobs or tasks."
+                }
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "disposition_id": {
@@ -53,13 +75,6 @@
                 "10": {
                     "description": "Requires reboot to finish the operation."
                 }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
             }
         },
         "severity_id": {

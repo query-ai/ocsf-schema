@@ -1,5 +1,27 @@
 {
     "attributes": {
+        "type_id": {
+            "enum": {
+                "100899": {
+                    "caption": "Registry Value Activity: Other"
+                },
+                "100900": {
+                    "caption": "Registry Value Activity: Unknown"
+                },
+                "100902": {
+                    "caption": "Registry Value Activity: Set"
+                },
+                "100901": {
+                    "caption": "Registry Value Activity: Get"
+                },
+                "100903": {
+                    "caption": "Registry Value Activity: Modify"
+                },
+                "100904": {
+                    "caption": "Registry Value Activity: Delete"
+                }
+            }
+        },
         "data": {
             "description": "Additional data that is associated with the event.",
             "requirement": "optional",
@@ -7,38 +29,7 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "reg_value_result": {
-            "requirement": "optional",
-            "caption": "Registry Value Result",
-            "description": "The result of the registry value change. It should contain the new values of the changed attributes.",
-            "type": "registry_value",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "confidence": {
@@ -49,33 +40,44 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "class_id": {
+            "enum": {
+                "1009": {
+                    "caption": "Registry Value Activity",
+                    "description": "Registry Value Activity events reports when a process performs an action on a Windows registry value."
+                }
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "reg_value_result": {
+            "requirement": "optional",
+            "caption": "Registry Value Result",
+            "description": "The result of the registry value change. It should contain the new values of the changed attributes.",
+            "type": "registry_value",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "disposition_id": {
             "enum": {
-                "15": {
-                    "description": "Marked with extended attributes."
+                "10": {
+                    "description": "Requires reboot to finish the operation."
                 },
                 "14": {
                     "description": "No longer suspicious (re-scored)."
                 },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
-                }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
+                "15": {
+                    "description": "Marked with extended attributes."
                 }
             }
         },
@@ -83,7 +85,14 @@
             "type": "registry_value",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
+                }
             }
         }
     }

@@ -1,15 +1,5 @@
 {
     "attributes": {
-        "ja3s_fingerprint": {
-            "requirement": "recommended",
-            "caption": "JAS3 Fingerprint",
-            "description": "The fingerprint of JAS3 string.",
-            "type": "fingerprint",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
         "ja3_string": {
             "requirement": "recommended",
             "caption": "JA3 String",
@@ -17,7 +7,17 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "ja3s_fingerprint": {
+            "requirement": "recommended",
+            "caption": "JAS3 Fingerprint",
+            "description": "The fingerprint of JAS3 string.",
+            "type": "fingerprint",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "ja3s_string": {
@@ -27,7 +27,7 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "ja3_fingerprint": {
@@ -37,7 +37,7 @@
             "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         }
     }

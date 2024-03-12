@@ -1,14 +1,99 @@
 {
     "attributes": {
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "type_id": {
+            "enum": {
+                "400101": {
+                    "caption": "Network Activity: Open"
+                },
+                "0": {
+                    "caption": "Unknown",
+                    "description": "The type is unknown."
+                },
+                "400100": {
+                    "caption": "Network Activity: Unknown"
+                },
+                "400105": {
+                    "caption": "SMB Activity: File Overwrite"
+                },
+                "400104": {
+                    "caption": "Network Activity: Traffic"
+                },
+                "400106": {
+                    "caption": "SMB Activity: File Overwrite If"
+                },
+                "400099": {
+                    "caption": "Network Activity: Other"
+                },
+                "400102": {
+                    "caption": "Network Activity: Close"
+                },
+                "400103": {
+                    "caption": "Network Activity: Reset"
+                }
+            },
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            },
+            "default": 0,
+            "sibling": "type"
+        },
+        "class_id": {
+            "enum": {
+                "4010": {
+                    "caption": "SMTP Activity",
+                    "description": "SMTP Activity events report email communications using the Simple Mail Transfer Protocol (SMTP)."
+                },
+                "4005": {
+                    "caption": "RDP Activity",
+                    "description": "Remote Desktop Protocol (RDP) Activity events report remote client connections to a server as seen on the network."
+                },
+                "4009": {
+                    "caption": "RFB Activity",
+                    "description": "Remote Frame Buffer Protocol (RFB) Activity events report remote client connections to a server as seen on the network."
+                },
+                "4002": {
+                    "caption": "HTTP Activity",
+                    "description": "HTTP Activity events report HTTP connection and traffic information."
+                },
+                "4007": {
+                    "caption": "SSH Activity",
+                    "description": "SSH Activity events report remote client connections to a server using the Secure Shell (SSH) Protocol."
+                },
+                "4008": {
+                    "caption": "FTP Activity",
+                    "description": "File Transfer Protocol (FTP) Activity events report file transfers between a server and a client as seen on the network."
+                },
+                "4001": {
+                    "caption": "Network Activity",
+                    "description": "Network Activity events report network connection and traffic activity."
+                },
+                "4006": {
+                    "caption": "SMB Activity",
+                    "description": "Server Message Block (SMB) Protocol Activity events report client/server connections sharing resources within the network."
+                }
+            }
+        },
         "activity_id": {
             "enum": {
-                "4": {
-                    "caption": "Traffic",
-                    "description": "Network traffic report."
-                },
                 "3": {
                     "caption": "Query",
                     "description": "The DNS query request."
+                },
+                "4": {
+                    "caption": "Traffic",
+                    "description": "Network traffic report."
                 },
                 "1": {
                     "description": "The DNS request was successfully resolved."
@@ -18,11 +103,11 @@
                 }
             }
         },
-        "category_uid": {
-            "default": 0,
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "confidence": {
@@ -33,31 +118,7 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "severity_id": {
@@ -69,22 +130,15 @@
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
+                "10": {
+                    "description": "Requires reboot to finish the operation."
                 },
                 "15": {
                     "description": "Marked with extended attributes."
                 },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
             }
         }
     }

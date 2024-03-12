@@ -1,13 +1,13 @@
 {
     "attributes": {
-        "issuer_dn": {
-            "requirement": "required",
-            "caption": "Issuer Distinguished Name",
-            "description": "The certificate issuer distinguished name.",
+        "subject_dn": {
+            "requirement": "recommended",
+            "caption": "Subject Distinguished Name",
+            "description": "The certificate subject distinguished name.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "fingerprint": {
@@ -17,17 +17,17 @@
             "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "subject_dn": {
-            "requirement": "recommended",
-            "caption": "Subject Distinguished Name",
-            "description": "The certificate subject distinguished name.",
+        "issuer_dn": {
+            "requirement": "required",
+            "caption": "Issuer Distinguished Name",
+            "description": "The certificate issuer distinguished name.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         }
     }

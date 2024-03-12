@@ -1,5 +1,64 @@
 {
     "attributes": {
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+            }
+        },
+        "type_id": {
+            "enum": {
+                "100009": {
+                    "caption": "File System Activity: Get Security"
+                },
+                "100011": {
+                    "caption": "File System Activity: Decrypt"
+                },
+                "100004": {
+                    "caption": "File System Activity: Delete"
+                },
+                "100005": {
+                    "caption": "File System Activity: Rename"
+                },
+                "100010": {
+                    "caption": "File System Activity: Encrypt"
+                },
+                "100000": {
+                    "caption": "File System Activity: Unknown"
+                },
+                "100007": {
+                    "caption": "File System Activity: Set Security"
+                },
+                "100001": {
+                    "caption": "File System Activity: Create"
+                },
+                "100003": {
+                    "caption": "File System Activity: Update"
+                },
+                "100002": {
+                    "caption": "File System Activity: Read"
+                },
+                "100012": {
+                    "caption": "File System Activity: Mounted"
+                },
+                "100006": {
+                    "caption": "File System Activity: Set Attributes"
+                },
+                "100008": {
+                    "caption": "File System Activity: Get Attributes"
+                },
+                "99999": {
+                    "caption": "File System Activity: Other"
+                },
+                "100013": {
+                    "caption": "File System Activity: Unmounted"
+                }
+            }
+        },
         "confidence": {
             "group": "classification",
             "requirement": "optional",
@@ -8,50 +67,34 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
         "count": {
             "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
             }
         },
-        "class_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
-            }
-        },
-        "category_uid": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
+        "class_id": {
+            "enum": {
+                "1000": {
+                    "caption": "File System Activity",
+                    "description": "File System Activity events report when a process performs an action on a file or folder."
+                }
             }
         },
         "disposition_id": {
             "enum": {
-                "15": {
-                    "description": "Marked with extended attributes."
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 },
                 "10": {
                     "description": "Requires reboot to finish the operation."
                 },
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
+                "15": {
+                    "description": "Marked with extended attributes."
                 }
             }
         },
@@ -60,13 +103,6 @@
                 "0": {
                     "description": "The event severity is not known."
                 }
-            }
-        },
-        "type_uid": {
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-02-27 03:53:04.122865"
             }
         }
     }
