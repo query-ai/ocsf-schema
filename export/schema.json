@@ -8885,14 +8885,22 @@
           "group": "context",
           "caption": "Connection Identifier",
           "description": "The network connection identifier.",
-          "type": "string_t"
+          "type": "string_t",
+          "@deprecated": {
+              "since": "1.1.0",
+              "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+          }
         },
         "email_uid": {
           "requirement": "recommended",
           "group": "primary",
           "caption": "Email UID",
           "description": "The unique identifier of the email, used to correlate related email alert and activity events.",
-          "type": "string_t"
+          "type": "string_t",
+          "@deprecated": {
+              "since": "1.1.0",
+              "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+          }
         },
         "metadata": {
             "group": "context",
