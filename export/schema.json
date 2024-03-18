@@ -444,14 +444,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "3001": {
-              "caption": "Account Change",
-              "description": "Account Change events report when specific user account management tasks are performed, such as a user/role being created, changed, deleted, renamed, disabled, enabled, locked out or unlocked."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -462,8 +454,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "3001": {
+              "caption": "Account Change",
+              "description": "Account Change events report when specific user account management tasks are performed, such as a user/role being created, changed, deleted, renamed, disabled, enabled, locked out or unlocked."
             }
           },
           "requirement": "required",
@@ -704,7 +697,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "300100": {
               "caption": "Account Change: Unknown"
@@ -745,17 +746,7 @@
             "300199": {
               "caption": "Account Change: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -866,14 +857,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6003": {
-              "caption": "API Activity",
-              "description": "API events describe general CRUD (Create, Read, Update, Delete) API activities, e.g. (AWS Cloudtrail)"
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -884,8 +867,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6003": {
+              "caption": "API Activity",
+              "description": "API events describe general CRUD (Create, Read, Update, Delete) API activities, e.g. (AWS Cloudtrail)"
             }
           },
           "requirement": "required",
@@ -1128,7 +1112,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "600300": {
               "caption": "API Activity: Unknown"
@@ -1148,17 +1140,7 @@
             "600399": {
               "caption": "API Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -1566,14 +1548,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6002": {
-              "caption": "Application Lifecycle",
-              "description": "Application Lifecycle events report installation, removal, start, stop of an application or service."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -1584,8 +1558,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6002": {
+              "caption": "Application Lifecycle",
+              "description": "Application Lifecycle events report installation, removal, start, stop of an application or service."
             }
           },
           "requirement": "required",
@@ -1805,7 +1780,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "600200": {
               "caption": "Application Lifecycle: Unknown"
@@ -1825,17 +1808,7 @@
             "600299": {
               "caption": "Application Lifecycle: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -2015,14 +1988,6 @@
           "requirement": "optional",
           "type": "certificate"
         },
-        "class_id": {
-          "enum": {
-            "3002": {
-              "caption": "Authentication",
-              "description": "Authentication events report authentication session activities such as user attempts a logon or logoff, successfully or otherwise."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -2033,8 +1998,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "3002": {
+              "caption": "Authentication",
+              "description": "Authentication events report authentication session activities such as user attempts a logon or logoff, successfully or otherwise."
             }
           },
           "requirement": "required",
@@ -2392,7 +2358,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "300200": {
               "caption": "Authentication: Unknown"
@@ -2415,17 +2389,7 @@
             "300299": {
               "caption": "Authentication: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -2843,15 +2807,6 @@
               "caption": "Unknown",
               "description": "The type is unknown."
             },
-            "1": {
-              "caption": "IP"
-            },
-            "2": {
-              "caption": "Domain"
-            },
-            "3": {
-              "caption": "Url"
-            },
             "300299": {
               "caption": "Authorization: Other"
             },
@@ -2863,9 +2818,6 @@
             },
             "300302": {
               "caption": "Authorization: Assign Groups"
-            },
-            "4": {
-              "caption": "Hash"
             },
             "99": {
               "caption": "Other",
@@ -2984,14 +2936,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "3003": {
-              "caption": "Authorize Session",
-              "description": "Authorize Session events report privileges or groups assigned to a new user session, usually at login time."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -3002,8 +2946,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "3003": {
+              "caption": "Authorize Session",
+              "description": "Authorize Session events report privileges or groups assigned to a new user session, usually at login time."
             }
           },
           "requirement": "required",
@@ -3252,7 +3197,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "300300": {
               "caption": "Authorize Session: Unknown"
@@ -3266,17 +3219,7 @@
             "300399": {
               "caption": "Authorize Session: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -3688,14 +3631,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "2003": {
-              "caption": "Compliance Finding",
-              "description": "Compliance Finding events describe results of evaluations performed against resources, to check compliance with various Industry Frameworks or Security Standards such as <code>NIST SP 800-53, CIS AWS Foundations Benchmark v1.4.0, ISO/IEC 27001</code> etc."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -3706,8 +3641,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "2003": {
+              "caption": "Compliance Finding",
+              "description": "Compliance Finding events describe results of evaluations performed against resources, to check compliance with various Industry Frameworks or Security Standards such as <code>NIST SP 800-53, CIS AWS Foundations Benchmark v1.4.0, ISO/IEC 27001</code> etc."
             }
           },
           "requirement": "required",
@@ -4006,7 +3942,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "200300": {
               "caption": "Compliance Finding: Unknown"
@@ -4023,17 +3967,7 @@
             "200399": {
               "caption": "Compliance Finding: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -4128,14 +4062,6 @@
           "requirement": "recommended",
           "type": "cis_benchmark_result"
         },
-        "class_id": {
-          "enum": {
-            "5002": {
-              "caption": "Device Config State",
-              "description": "Device Config State events report device configuration data and CIS Benchmark results."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -4146,8 +4072,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5002": {
+              "caption": "Device Config State",
+              "description": "Device Config State events report device configuration data and CIS Benchmark results."
             }
           },
           "requirement": "required",
@@ -4368,7 +4295,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "500200": {
               "caption": "Device Config State: Unknown"
@@ -4382,17 +4317,7 @@
             "500299": {
               "caption": "Device Config State: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -4500,14 +4425,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6005": {
-              "caption": "Datastore Activity",
-              "description": "Datastore events describe general activities (Read, Update, Query, Delete, etc.) which affect datastores or data within those datastores, e.g. (AWS RDS, AWS S3)."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -4518,8 +4435,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6005": {
+              "caption": "Datastore Activity",
+              "description": "Datastore events describe general activities (Read, Update, Query, Delete, etc.) which affect datastores or data within those datastores, e.g. (AWS RDS, AWS S3)."
             }
           },
           "requirement": "required",
@@ -4805,6 +4723,25 @@
             "3": {
               "caption": "Table"
             },
+            "99": {
+              "caption": "Other",
+              "description": "The datastore resource type is not mapped."
+            }
+          },
+          "requirement": "recommended",
+          "sibling": "type",
+          "type": "integer_t"
+        },
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          "enum": {
             "600500": {
               "caption": "Datastore Activity: Unknown"
             },
@@ -4831,25 +4768,8 @@
             },
             "600599": {
               "caption": "Datastore Activity: Other"
-            },
-            "99": {
-              "caption": "Other",
-              "description": "The datastore resource type is not mapped."
             }
           },
-          "requirement": "recommended",
-          "sibling": "type",
-          "type": "integer_t"
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -4996,14 +4916,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "2004": {
-              "caption": "Detection Finding",
-              "description": "A Detection Finding describes detections or alerts generated by security products using correlation engines, detection engines or other methodologies. Note: if the product is a security control, the <code>security_control</code> profile should be applied and its <code>attacks</code> information should be duplicated into the <code>finding_info</code> object."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -5014,8 +4926,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "2004": {
+              "caption": "Detection Finding",
+              "description": "A Detection Finding describes detections or alerts generated by security products using correlation engines, detection engines or other methodologies. Note: if the product is a security control, the <code>security_control</code> profile should be applied and its <code>attacks</code> information should be duplicated into the <code>finding_info</code> object."
             }
           },
           "requirement": "required",
@@ -5543,7 +5456,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "200400": {
               "caption": "Detection Finding: Unknown"
@@ -5560,17 +5481,7 @@
             "200499": {
               "caption": "Detection Finding: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -5666,14 +5577,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "5019": {
-              "caption": "Device Config State Change",
-              "description": "Device Config State Change events report state changes that impact the security of the device."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -5684,8 +5587,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5019": {
+              "caption": "Device Config State Change",
+              "description": "Device Config State Change events report state changes that impact the security of the device."
             }
           },
           "requirement": "required",
@@ -5982,7 +5886,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "501900": {
               "caption": "Device Config State Change: Unknown"
@@ -5996,17 +5908,7 @@
             "501999": {
               "caption": "Device Config State Change: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -6173,14 +6075,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4004": {
-              "caption": "DHCP Activity",
-              "description": "DHCP Activity events report MAC to IP assignment via DHCP from a client or server."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -6191,8 +6085,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4004": {
+              "caption": "DHCP Activity",
+              "description": "DHCP Activity events report MAC to IP assignment via DHCP from a client or server."
             }
           },
           "requirement": "required",
@@ -6671,7 +6566,15 @@
           "requirement": "optional",
           "type": "string_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400400": {
               "caption": "DHCP Activity: Unknown"
@@ -6706,17 +6609,7 @@
             "400499": {
               "caption": "DHCP Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -7521,14 +7414,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4003": {
-              "caption": "DNS Activity",
-              "description": "DNS Activity events report DNS queries and answers as seen on the network."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -7539,8 +7424,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4003": {
+              "caption": "DNS Activity",
+              "description": "DNS Activity events report DNS queries and answers as seen on the network."
             }
           },
           "requirement": "required",
@@ -8121,7 +8007,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400300": {
               "caption": "DNS Activity: Unknown"
@@ -8138,17 +8032,7 @@
             "400399": {
               "caption": "DNS Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -8299,14 +8183,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4009": {
-              "caption": "Email Activity",
-              "description": "Email events report activities of emails."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -8317,8 +8193,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4009": {
+              "caption": "Email Activity",
+              "description": "Email events report activities of emails."
             }
           },
           "requirement": "required",
@@ -8754,7 +8631,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400900": {
               "caption": "Email Activity: Unknown"
@@ -8771,17 +8656,7 @@
             "400999": {
               "caption": "Email Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -8943,14 +8818,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4011": {
-              "caption": "Email File Activity",
-              "description": "Email File Activity events report files within emails."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -8961,8 +8828,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4011": {
+              "caption": "Email File Activity",
+              "description": "Email File Activity events report files within emails."
             }
           },
           "requirement": "required",
@@ -9340,7 +9208,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "401100": {
               "caption": "Email File Activity: Unknown"
@@ -9357,17 +9233,7 @@
             "401199": {
               "caption": "Email File Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -9502,14 +9368,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4012": {
-              "caption": "Email URL Activity",
-              "description": "Email URL Activity events report URLs within an email."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -9520,8 +9378,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4012": {
+              "caption": "Email URL Activity",
+              "description": "Email URL Activity events report URLs within an email."
             }
           },
           "requirement": "required",
@@ -9892,7 +9751,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "401200": {
               "caption": "Email URL Activity: Unknown"
@@ -9909,17 +9776,7 @@
             "401299": {
               "caption": "Email URL Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -10022,14 +9879,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "3004": {
-              "caption": "Entity Management",
-              "description": "Entity Management events report activity by a managed client, a micro service, or a user at a management console. The activity can be a create, read, update, and delete operation on a managed entity."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -10040,8 +9889,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "3004": {
+              "caption": "Entity Management",
+              "description": "Entity Management events report activity by a managed client, a micro service, or a user at a management console. The activity can be a create, read, update, and delete operation on a managed entity."
             }
           },
           "requirement": "required",
@@ -10282,7 +10132,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "300400": {
               "caption": "Entity Management: Unknown"
@@ -10302,17 +10160,7 @@
             "300499": {
               "caption": "Entity Management: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -10511,14 +10359,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1001": {
-              "caption": "File System Activity",
-              "description": "File System Activity events report when a process performs an action on a file or folder."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -10529,8 +10369,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1001": {
+              "caption": "File System Activity",
+              "description": "File System Activity events report when a process performs an action on a file or folder."
             }
           },
           "requirement": "required",
@@ -10937,7 +10778,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100100": {
               "caption": "File System Activity: Unknown"
@@ -10987,17 +10836,7 @@
             "100199": {
               "caption": "File System Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -11142,14 +10981,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6006": {
-              "caption": "File Hosting Activity",
-              "description": "File Hosting Activity events report the actions taken by file management applications, including file sharing servers like Sharepoint and services such as Box, MS OneDrive, or Google Drive."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -11160,8 +10991,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6006": {
+              "caption": "File Hosting Activity",
+              "description": "File Hosting Activity events report the actions taken by file management applications, including file sharing servers like Sharepoint and services such as Box, MS OneDrive, or Google Drive."
             }
           },
           "requirement": "required",
@@ -11408,7 +11240,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "600600": {
               "caption": "File Hosting Activity: Unknown"
@@ -11464,17 +11304,7 @@
             "600699": {
               "caption": "File Hosting Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -12020,14 +11850,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4008": {
-              "caption": "FTP Activity",
-              "description": "File Transfer Protocol (FTP) Activity events report file transfers between a server and a client as seen on the network."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -12038,8 +11860,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4008": {
+              "caption": "FTP Activity",
+              "description": "File Transfer Protocol (FTP) Activity events report file transfers between a server and a client as seen on the network."
             }
           },
           "requirement": "required",
@@ -12534,7 +12357,15 @@
           "requirement": "recommended",
           "type": "string_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400800": {
               "caption": "FTP Activity: Unknown"
@@ -12560,17 +12391,7 @@
             "400899": {
               "caption": "FTP Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -12679,14 +12500,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "3006": {
-              "caption": "Group Management",
-              "description": "Group Management events report management updates to a group, including updates to membership and permissions."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -12697,8 +12510,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "3006": {
+              "caption": "Group Management",
+              "description": "Group Management events report management updates to a group, including updates to membership and permissions."
             }
           },
           "requirement": "required",
@@ -12940,7 +12754,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "300600": {
               "caption": "Group Management: Unknown"
@@ -12966,17 +12788,7 @@
             "300699": {
               "caption": "Group Management: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -13152,14 +12964,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4002": {
-              "caption": "HTTP Activity",
-              "description": "HTTP Activity events report HTTP connection and traffic information."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -13170,8 +12974,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4002": {
+              "caption": "HTTP Activity",
+              "description": "HTTP Activity events report HTTP connection and traffic information."
             }
           },
           "requirement": "required",
@@ -13654,7 +13459,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400200": {
               "caption": "HTTP Activity: Unknown"
@@ -13686,17 +13499,7 @@
             "400299": {
               "caption": "HTTP Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -14126,14 +13929,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "2005": {
-              "caption": "Incident Finding",
-              "description": "An Incident Finding reports the creation, update, or closure of security incidents as a result of detections and/or analytics."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -14144,8 +13939,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "2005": {
+              "caption": "Incident Finding",
+              "description": "An Incident Finding reports the creation, update, or closure of security incidents as a result of detections and/or analytics."
             }
           },
           "requirement": "required",
@@ -14527,7 +14323,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "200500": {
               "caption": "Incident Finding: Unknown"
@@ -14544,17 +14348,7 @@
             "200599": {
               "caption": "Incident Finding: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -14714,14 +14508,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "5001": {
-              "caption": "Device Inventory Info",
-              "description": "Device Inventory Info events report device inventory data that is either logged or proactively collected. For example, when collecting device information from a CMDB or running a network sweep of connected devices."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -14732,8 +14518,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5001": {
+              "caption": "Device Inventory Info",
+              "description": "Device Inventory Info events report device inventory data that is either logged or proactively collected. For example, when collecting device information from a CMDB or running a network sweep of connected devices."
             }
           },
           "requirement": "required",
@@ -14954,7 +14741,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "500100": {
               "caption": "Device Inventory Info: Unknown"
@@ -14968,17 +14763,7 @@
             "500199": {
               "caption": "Device Inventory Info: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -15126,14 +14911,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1003": {
-              "caption": "Kernel Activity",
-              "description": "Kernel Activity events report when an process creates, reads, or deletes a kernel resource."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -15144,8 +14921,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1003": {
+              "caption": "Kernel Activity",
+              "description": "Kernel Activity events report when an process creates, reads, or deletes a kernel resource."
             }
           },
           "requirement": "required",
@@ -15517,7 +15295,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100300": {
               "caption": "Kernel Activity: Unknown"
@@ -15537,17 +15323,7 @@
             "100399": {
               "caption": "Kernel Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -15692,14 +15468,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1002": {
-              "caption": "Kernel Extension Activity",
-              "description": "Kernel Extension events report when a driver/extension is loaded or unloaded into the kernel"
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -15710,8 +15478,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1002": {
+              "caption": "Kernel Extension Activity",
+              "description": "Kernel Extension events report when a driver/extension is loaded or unloaded into the kernel"
             }
           },
           "requirement": "required",
@@ -16083,7 +15852,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100200": {
               "caption": "Kernel Extension Activity: Unknown"
@@ -16097,17 +15874,7 @@
             "100299": {
               "caption": "Kernel Extension Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -16286,14 +16053,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1004": {
-              "caption": "Memory Activity",
-              "description": "Memory Activity events report when a process has memory allocated, read/modified, or other manipulation activities - such as a buffer overflow or turning off data execution protection (DEP)."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -16304,8 +16063,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1004": {
+              "caption": "Memory Activity",
+              "description": "Memory Activity events report when a process has memory allocated, read/modified, or other manipulation activities - such as a buffer overflow or turning off data execution protection (DEP)."
             }
           },
           "requirement": "required",
@@ -16690,7 +16450,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100400": {
               "caption": "Memory Activity: Unknown"
@@ -16722,17 +16490,7 @@
             "100499": {
               "caption": "Memory Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -16875,14 +16633,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1005": {
-              "caption": "Module Activity",
-              "description": "Module  Activity events report when a process loads or unloads the <code>module</code>."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -16893,8 +16643,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1005": {
+              "caption": "Module Activity",
+              "description": "Module  Activity events report when a process loads or unloads the <code>module</code>."
             }
           },
           "requirement": "required",
@@ -17266,7 +17017,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100500": {
               "caption": "Module Activity: Unknown"
@@ -17280,17 +17039,7 @@
             "100599": {
               "caption": "Module Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -18049,14 +17798,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4001": {
-              "caption": "Network Activity",
-              "description": "Network Activity events report network connection and traffic activity."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -18067,8 +17808,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4001": {
+              "caption": "Network Activity",
+              "description": "Network Activity events report network connection and traffic activity."
             }
           },
           "requirement": "required",
@@ -18519,7 +18261,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400100": {
               "caption": "Network Activity: Unknown"
@@ -18545,17 +18295,7 @@
             "400199": {
               "caption": "Network Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -18765,14 +18505,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4010": {
-              "caption": "Network File Activity",
-              "description": "Network File Activity events report file activities traversing the network, including file storage services such as Box, MS OneDrive, or Google Drive."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -18783,8 +18515,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4010": {
+              "caption": "Network File Activity",
+              "description": "Network File Activity events report file activities traversing the network, including file storage services such as Box, MS OneDrive, or Google Drive."
             }
           },
           "requirement": "required",
@@ -19249,7 +18982,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "401000": {
               "caption": "Network File Activity: Unknown"
@@ -19305,17 +19046,7 @@
             "401099": {
               "caption": "Network File Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -19477,14 +19208,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4013": {
-              "caption": "NTP Activity",
-              "description": "The Network Time Protocol (NTP) Activity events report instances of remote clients synchronizing their clocks with an NTP server, as observed on the network."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -19495,8 +19218,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4013": {
+              "caption": "NTP Activity",
+              "description": "The Network Time Protocol (NTP) Activity events report instances of remote clients synchronizing their clocks with an NTP server, as observed on the network."
             }
           },
           "requirement": "required",
@@ -20008,7 +19732,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "401300": {
               "caption": "NTP Activity: Unknown"
@@ -20037,17 +19769,7 @@
             "401399": {
               "caption": "NTP Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -20144,14 +19866,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "5004": {
-              "caption": "Operating System Patch State",
-              "description": "Operating System Patch State reports the installation of an OS patch to a device and any associated knowledgebase articles."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -20162,8 +19876,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5004": {
+              "caption": "Operating System Patch State",
+              "description": "Operating System Patch State reports the installation of an OS patch to a device and any associated knowledgebase articles."
             }
           },
           "requirement": "required",
@@ -20392,7 +20107,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "500400": {
               "caption": "Operating System Patch State: Unknown"
@@ -20406,17 +20129,7 @@
             "500499": {
               "caption": "Operating System Patch State: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -20530,10 +20243,6 @@
             "32010": {
               "caption": "Prefetch Info",
               "description": "Prefetch Info events report information about Windows prefetch files."
-            },
-            "5019": {
-              "caption": "Prefetch Info",
-              "description": "Prefetch Info events report information about Windows prefetch files."
             }
           }
         },
@@ -20547,8 +20256,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5019": {
+              "caption": "Prefetch Info",
+              "description": "Prefetch Info events report information about Windows prefetch files."
             }
           },
           "requirement": "required",
@@ -20831,6 +20541,24 @@
             "3201002": {
               "caption": "Prefetch Info: Partial"
             },
+            "99": {
+              "caption": "Other",
+              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
+            }
+          },
+          "sibling": "type",
+          "type": "integer_t"
+        },
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          "enum": {
             "501900": {
               "caption": "Prefetch Info: Unknown"
             },
@@ -20851,24 +20579,8 @@
             },
             "501999": {
               "caption": "Prefetch Info: Other"
-            },
-            "99": {
-              "caption": "Other",
-              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
             }
           },
-          "sibling": "type",
-          "type": "integer_t"
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -21027,14 +20739,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1007": {
-              "caption": "Process Activity",
-              "description": "Process Activity events report when a process launches, injects, opens or terminates another process, successful or otherwise."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -21045,8 +20749,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1007": {
+              "caption": "Process Activity",
+              "description": "Process Activity events report when a process launches, injects, opens or terminates another process, successful or otherwise."
             }
           },
           "requirement": "required",
@@ -21470,7 +21175,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100700": {
               "caption": "Process Activity: Unknown"
@@ -21493,17 +21206,7 @@
             "100799": {
               "caption": "Process Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -21674,14 +21377,6 @@
           "requirement": "optional",
           "type": "string_t"
         },
-        "class_id": {
-          "enum": {
-            "4005": {
-              "caption": "RDP Activity",
-              "description": "Remote Desktop Protocol (RDP) Activity events report remote client connections to a server as seen on the network."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -21692,8 +21387,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4005": {
+              "caption": "RDP Activity",
+              "description": "Remote Desktop Protocol (RDP) Activity events report remote client connections to a server as seen on the network."
             }
           },
           "requirement": "required",
@@ -22178,7 +21874,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400500": {
               "caption": "RDP Activity: Unknown"
@@ -22204,17 +21908,7 @@
             "400599": {
               "caption": "RDP Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -22387,14 +22081,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1001": {
-              "caption": "Registry Key Activity",
-              "description": "Registry Key Activity events report when a process performs an action on a Windows registry key."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -22405,8 +22091,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1001": {
+              "caption": "Registry Key Activity",
+              "description": "Registry Key Activity events report when a process performs an action on a Windows registry key."
             }
           },
           "requirement": "required",
@@ -22799,7 +22486,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100100": {
               "caption": "Registry Key Activity: Unknown"
@@ -22834,17 +22529,7 @@
             "100199": {
               "caption": "Registry Key Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -22953,10 +22638,6 @@
             "32012": {
               "caption": "Registry Key Info",
               "description": "Registry Key Info events report information about Windows registry keys."
-            },
-            "5004": {
-              "caption": "Registry Key Info",
-              "description": "Registry Key Info events report information about discovered Windows registry keys."
             }
           }
         },
@@ -22970,8 +22651,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5004": {
+              "caption": "Registry Key Info",
+              "description": "Registry Key Info events report information about discovered Windows registry keys."
             }
           },
           "requirement": "required",
@@ -23244,6 +22926,24 @@
             "3201202": {
               "caption": "Registry Key Info: Partial"
             },
+            "99": {
+              "caption": "Other",
+              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
+            }
+          },
+          "sibling": "type",
+          "type": "integer_t"
+        },
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          "enum": {
             "500400": {
               "caption": "Registry Key Info: Unknown"
             },
@@ -23264,24 +22964,8 @@
             },
             "500499": {
               "caption": "Registry Key Info: Other"
-            },
-            "99": {
-              "caption": "Other",
-              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
             }
           },
-          "sibling": "type",
-          "type": "integer_t"
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -23430,14 +23114,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1002": {
-              "caption": "Registry Value Activity",
-              "description": "Registry Value Activity events reports when a process performs an action on a Windows registry value."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -23448,8 +23124,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1002": {
+              "caption": "Registry Value Activity",
+              "description": "Registry Value Activity events reports when a process performs an action on a Windows registry value."
             }
           },
           "requirement": "required",
@@ -23826,7 +23503,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100200": {
               "caption": "Registry Value Activity: Unknown"
@@ -23846,17 +23531,7 @@
             "100299": {
               "caption": "Registry Value Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -23965,10 +23640,6 @@
             "32013": {
               "caption": "Registry Value Info",
               "description": "Registry Value Info events report information about Windows registry values."
-            },
-            "5005": {
-              "caption": "Registry Value Info",
-              "description": "Registry Value Info events report information about discovered Windows registry values."
             }
           }
         },
@@ -23982,8 +23653,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5005": {
+              "caption": "Registry Value Info",
+              "description": "Registry Value Info events report information about discovered Windows registry values."
             }
           },
           "requirement": "required",
@@ -24256,6 +23928,24 @@
             "3201302": {
               "caption": "Registry Value Info: Partial"
             },
+            "99": {
+              "caption": "Other",
+              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
+            }
+          },
+          "sibling": "type",
+          "type": "integer_t"
+        },
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          "enum": {
             "500500": {
               "caption": "Registry Value Info: Unknown"
             },
@@ -24276,24 +23966,8 @@
             },
             "500599": {
               "caption": "Registry Value Info: Other"
-            },
-            "99": {
-              "caption": "Other",
-              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
             }
           },
-          "sibling": "type",
-          "type": "integer_t"
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -24433,14 +24107,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1003": {
-              "caption": "Windows Resource Activity",
-              "description": "Windows Resource Activity events report when a process accesses a Windows managed resource object, successful or otherwise."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -24451,8 +24117,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1003": {
+              "caption": "Windows Resource Activity",
+              "description": "Windows Resource Activity events report when a process accesses a Windows managed resource object, successful or otherwise."
             }
           },
           "requirement": "required",
@@ -24817,7 +24484,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100300": {
               "caption": "Windows Resource Activity: Unknown"
@@ -24828,17 +24503,7 @@
             "100399": {
               "caption": "Windows Resource Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -24969,14 +24634,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6007": {
-              "caption": "Scan Activity",
-              "description": "Scan events report the start, completion, and results of a scan job. The scan event includes the number of items that were scanned and the number of detections that were resolved."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -24987,8 +24644,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6007": {
+              "caption": "Scan Activity",
+              "description": "Scan events report the start, completion, and results of a scan job. The scan event includes the number of items that were scanned and the number of detections that were resolved."
             }
           },
           "requirement": "required",
@@ -25306,7 +24964,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "600700": {
               "caption": "Scan Activity: Unknown"
@@ -25344,17 +25010,7 @@
             "600799": {
               "caption": "Scan Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -25508,14 +25164,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "1006": {
-              "caption": "Scheduled Job Activity",
-              "description": "Scheduled Job Activity events report activities related to scheduled jobs or tasks."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -25526,8 +25174,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "1006": {
+              "caption": "Scheduled Job Activity",
+              "description": "Scheduled Job Activity events report activities related to scheduled jobs or tasks."
             }
           },
           "requirement": "required",
@@ -25899,7 +25548,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "100600": {
               "caption": "Scheduled Job Activity: Unknown"
@@ -25925,17 +25582,7 @@
             "100699": {
               "caption": "Scheduled Job Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -26048,14 +25695,6 @@
           "requirement": "optional",
           "type": "cis_csc"
         },
-        "class_id": {
-          "enum": {
-            "2001": {
-              "caption": "Security Finding",
-              "description": "Security Finding events describe findings, detections, anomalies, alerts and/or actions performed by security products"
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -26066,8 +25705,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "2001": {
+              "caption": "Security Finding",
+              "description": "Security Finding events describe findings, detections, anomalies, alerts and/or actions performed by security products"
             }
           },
           "requirement": "required",
@@ -26517,14 +26157,16 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
           "caption": "Type ID",
-          "description": "The normalized type identifier of an object. See specific usage.",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
-            "0": {
-              "caption": "Unknown",
-              "description": "The type is unknown."
-            },
             "200100": {
               "caption": "Security Finding: Unknown"
             },
@@ -26539,24 +26181,8 @@
             },
             "200199": {
               "caption": "Security Finding: Other"
-            },
-            "99": {
-              "caption": "Other",
-              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
             }
           },
-          "sibling": "type",
-          "type": "integer_t"
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -26720,14 +26346,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4006": {
-              "caption": "SMB Activity",
-              "description": "Server Message Block (SMB) Protocol Activity events report client/server connections sharing resources within the network."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -26738,8 +26356,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4006": {
+              "caption": "SMB Activity",
+              "description": "Server Message Block (SMB) Protocol Activity events report client/server connections sharing resources within the network."
             }
           },
           "requirement": "required",
@@ -27288,7 +26907,15 @@
           "requirement": "optional",
           "type": "string_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400600": {
               "caption": "SMB Activity: Unknown"
@@ -27314,17 +26941,7 @@
             "400699": {
               "caption": "SMB Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -27531,14 +27148,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "4007": {
-              "caption": "SSH Activity",
-              "description": "SSH Activity events report remote client connections to a server using the Secure Shell (SSH) Protocol."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -27549,8 +27158,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "4007": {
+              "caption": "SSH Activity",
+              "description": "SSH Activity events report remote client connections to a server using the Secure Shell (SSH) Protocol."
             }
           },
           "requirement": "required",
@@ -28022,7 +27632,15 @@
           "requirement": "optional",
           "type": "network_traffic"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "400700": {
               "caption": "SSH Activity: Unknown"
@@ -28048,17 +27666,7 @@
             "400799": {
               "caption": "SSH Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -28671,14 +28279,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "3005": {
-              "caption": "User Access Management",
-              "description": "User Access Management events report management updates to a user's privileges."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -28689,8 +28289,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "3005": {
+              "caption": "User Access Management",
+              "description": "User Access Management events report management updates to a user's privileges."
             }
           },
           "requirement": "required",
@@ -28925,7 +28526,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "300500": {
               "caption": "User Access Management: Unknown"
@@ -28939,17 +28548,7 @@
             "300599": {
               "caption": "User Access Management: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -29044,14 +28643,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "5003": {
-              "caption": "User Inventory Info",
-              "description": "User Inventory Info events report user inventory data that is either logged or proactively collected. For example, when collecting user information from Active Directory entries."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -29062,8 +28653,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "5003": {
+              "caption": "User Inventory Info",
+              "description": "User Inventory Info events report user inventory data that is either logged or proactively collected. For example, when collecting user information from Active Directory entries."
             }
           },
           "requirement": "required",
@@ -29277,7 +28869,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "500300": {
               "caption": "User Inventory Info: Unknown"
@@ -29291,17 +28891,7 @@
             "500399": {
               "caption": "User Inventory Info: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -29403,14 +28993,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "2002": {
-              "caption": "Vulnerability Finding",
-              "description": "The Vulnerability Finding event is a notification about weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -29421,8 +29003,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "2002": {
+              "caption": "Vulnerability Finding",
+              "description": "The Vulnerability Finding event is a notification about weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source."
             }
           },
           "requirement": "required",
@@ -29707,7 +29290,15 @@
           "requirement": "recommended",
           "type": "integer_t"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "200200": {
               "caption": "Vulnerability Finding: Unknown"
@@ -29724,17 +29315,7 @@
             "200299": {
               "caption": "Vulnerability Finding: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -29841,14 +29422,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6004": {
-              "caption": "Web Resource Access Activity",
-              "description": "Web Resource Access Activity events describe successful/failed attempts to access a web resource over HTTP."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -29859,8 +29432,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6004": {
+              "caption": "Web Resource Access Activity",
+              "description": "Web Resource Access Activity events describe successful/failed attempts to access a web resource over HTTP."
             }
           },
           "requirement": "required",
@@ -30155,7 +29729,15 @@
           "requirement": "optional",
           "type": "tls"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "600400": {
               "caption": "Web Resource Access Activity: Unknown"
@@ -30175,17 +29757,7 @@
             "600499": {
               "caption": "Web Resource Access Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
@@ -30350,14 +29922,6 @@
           "sibling": "category_name",
           "type": "integer_t"
         },
-        "class_id": {
-          "enum": {
-            "6001": {
-              "caption": "Web Resources Activity",
-              "description": "Web Resources Activity events describe actions executed on a set of Web Resources."
-            }
-          }
-        },
         "class_name": {
           "caption": "Class",
           "description": "The event class name, as defined by class_uid value.",
@@ -30368,8 +29932,9 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "0": {
-              "caption": "Base Event"
+            "6001": {
+              "caption": "Web Resources Activity",
+              "description": "Web Resources Activity events describe actions executed on a set of Web Resources."
             }
           },
           "requirement": "required",
@@ -30804,7 +30369,15 @@
           "requirement": "optional",
           "type": "tls"
         },
-        "type_id": {
+        "type_name": {
+          "caption": "Type Name",
+          "description": "The event/finding type name, as defined by the type_uid.",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "type_uid": {
+          "caption": "Type ID",
+          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
             "600100": {
               "caption": "Web Resources Activity: Unknown"
@@ -30836,17 +30409,7 @@
             "600199": {
               "caption": "Web Resources Activity: Other"
             }
-          }
-        },
-        "type_name": {
-          "caption": "Type Name",
-          "description": "The event/finding type name, as defined by the type_uid.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "type_uid": {
-          "caption": "Type ID",
-          "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
+          },
           "requirement": "required",
           "sibling": "type_name",
           "type": "long_t"
