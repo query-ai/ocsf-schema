@@ -1,31 +1,35 @@
 {
+    "associations": {
+        "device": [
+            "actor.user"
+        ],
+        "actor.user": [
+            "device"
+        ]
+    },
     "attributes": {
-        "type_id": {
-            "enum": {
-                "100200": {
-                    "caption": "Email URL Activity: Unknown"
-                },
-                "100201": {
-                    "caption": "Email URL Activity: Allowed"
-                },
-                "100199": {
-                    "caption": "Email URL Activity: Other"
-                }
-            }
-        },
-        "class_id": {
-            "enum": {
-                "1002": {
-                    "caption": "Email URL Activity",
-                    "description": "Email URL Activity events report non-threatening URLs within an email."
-                }
-            }
-        },
         "device": {
             "group": "primary",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "confidence": {
@@ -36,40 +40,23 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "actor": {
             "group": "primary",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
             "enum": {
-                "15": {
-                    "description": "Marked with extended attributes."
-                },
                 "10": {
                     "description": "Requires reboot to finish the operation."
+                },
+                "15": {
+                    "description": "Marked with extended attributes."
                 },
                 "14": {
                     "description": "No longer suspicious (re-scored)."
@@ -83,13 +70,5 @@
                 }
             }
         }
-    },
-    "associations": {
-        "device": [
-            "actor.user"
-        ],
-        "actor.user": [
-            "device"
-        ]
     }
 }

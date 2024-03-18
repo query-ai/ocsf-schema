@@ -4,20 +4,31 @@
             "group": "primary",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "type_id": {
-            "enum": {
-                "100100": {
-                    "caption": "Email File Activity: Unknown"
-                },
-                "100101": {
-                    "caption": "Email File Activity: Allowed"
-                },
-                "100099": {
-                    "caption": "Email File Activity: Other"
-                }
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "device": {
+            "group": "primary",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "count": {
+            "default": 1,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "confidence": {
@@ -28,51 +39,19 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "class_id": {
-            "enum": {
-                "1001": {
-                    "caption": "Email File Activity",
-                    "description": "Email File Activity events report non-threatening files within emails."
-                }
-            }
-        },
-        "device": {
-            "group": "primary",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
+                "10": {
+                    "description": "Requires reboot to finish the operation."
                 },
                 "15": {
                     "description": "Marked with extended attributes."
                 },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 }
             }
         },

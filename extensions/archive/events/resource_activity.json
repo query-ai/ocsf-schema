@@ -1,23 +1,21 @@
 {
     "attributes": {
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "count": {
             "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "type_id": {
-            "enum": {
-                "101000": {
-                    "caption": "Resource Activity: Unknown"
-                },
-                "100999": {
-                    "caption": "Resource Activity: Other"
-                },
-                "101001": {
-                    "caption": "Resource Activity: Access"
-                }
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "data": {
@@ -27,15 +25,7 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "class_id": {
-            "enum": {
-                "1010": {
-                    "caption": "Resource Activity",
-                    "description": "Resource Activity events report when a process accesses an OS managed resource/object, successful or otherwise."
-                }
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "resource": {
@@ -46,30 +36,19 @@
             "type": "resource",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
             "enum": {
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
                 "14": {
                     "description": "No longer suspicious (re-scored)."
                 },
                 "15": {
                     "description": "Marked with extended attributes."
-                },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
                 }
             }
         },

@@ -7,26 +7,17 @@
             "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "type_id": {
-            "default": 0,
+        "disposition": {
+            "requirement": "optional",
+            "caption": "Disposition",
+            "description": "The event disposition name, as defined by the disposition_id.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            },
-            "enum": {
-                "200099": {
-                    "caption": "Security Finding: Other"
-                }
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
@@ -90,33 +81,30 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "disposition": {
-            "requirement": "optional",
-            "caption": "Disposition",
-            "description": "The event disposition name, as defined by the disposition_id.",
-            "type": "string_t",
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
+                }
             }
         },
         "confidence": {
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             },
             "group": "classification"
-        },
-        "resources": {
-            "type": "resource",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
         },
         "activity_id": {
             "enum": {
@@ -128,11 +116,11 @@
                 }
             }
         },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
+        "resources": {
+            "type": "resource",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         }
     }

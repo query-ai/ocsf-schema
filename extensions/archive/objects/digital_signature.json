@@ -7,27 +7,7 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "company_name": {
-            "requirement": "required",
-            "caption": "Company Name",
-            "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "issuer_name": {
-            "requirement": "optional",
-            "caption": "Issuer Name",
-            "description": "The certificate issuer name.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "fingerprints": {
@@ -38,7 +18,27 @@
             "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "issuer_name": {
+            "requirement": "optional",
+            "caption": "Issuer Name",
+            "description": "The certificate issuer name.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "company_name": {
+            "requirement": "required",
+            "caption": "Company Name",
+            "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         }
     }

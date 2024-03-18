@@ -1,29 +1,10 @@
 {
     "attributes": {
-        "type_id": {
-            "enum": {
-                "101299": {
-                    "caption": "Kernel Extension Activity: Other"
-                },
-                "101301": {
-                    "caption": "Kernel Extension Activity: Load"
-                },
-                "101300": {
-                    "caption": "Kernel Extension Activity: Unknown"
-                },
-                "101302": {
-                    "caption": "Kernel Extension Activity: Unload"
-                }
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "confidence": {
@@ -34,31 +15,26 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "class_id": {
-            "enum": {
-                "1013": {
-                    "caption": "Kernel Extension Activity",
-                    "description": "Kernel Extension events report when a driver/extension is loaded or unloaded into the kernel"
-                }
-            }
-        },
-        "count": {
-            "default": 1,
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
                 "10": {
                     "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 },
                 "15": {
                     "description": "Marked with extended attributes."

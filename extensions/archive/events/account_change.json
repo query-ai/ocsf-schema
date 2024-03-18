@@ -1,17 +1,20 @@
 {
     "attributes": {
-        "type_id": {
-            "enum": {
-                "300099": {
-                    "caption": "Account Change: Other"
-                }
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "count": {
             "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "confidence": {
@@ -22,23 +25,19 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "activity_id": {
             "enum": {
+                "6": {
+                    "description": "A user account was deleted."
+                },
                 "1": {
                     "description": "A user account was created."
+                },
+                "7": {
+                    "description": "A user account was changed."
                 },
                 "2": {
                     "description": "A user account was enabled."
@@ -46,21 +45,8 @@
                 "5": {
                     "description": "A user account was disabled."
                 },
-                "6": {
-                    "description": "A user account was deleted."
-                },
-                "7": {
-                    "description": "A user account was changed."
-                },
                 "8": {
                     "description": "A user account was locked out."
-                }
-            }
-        },
-        "class_id": {
-            "enum": {
-                "3001": {
-                    "description": "Account Change events report when specific user account management tasks are performed, such as a user account is created, changed, deleted, renamed, disabled, enabled, locked out or unlocked."
                 }
             }
         },

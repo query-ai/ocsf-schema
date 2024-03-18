@@ -1,44 +1,12 @@
 {
     "attributes": {
-        "label": {
-            "requirement": "recommended",
-            "caption": "Label",
-            "description": "The label set for the policy.",
+        "type": {
+            "description": "The type of the policy.",
+            "caption": "Type",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "rule": {
-            "description": "The primary rule that triggered the policy event.",
-            "requirement": "recommended",
-            "caption": "Rule",
-            "type": "rule",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "effective_time": {
-            "requirement": "recommended",
-            "caption": "Effective Date",
-            "description": "The date and time that the specific policy and rule was applied and became operational. ",
-            "type": "timestamp_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "rules": {
-            "description": "Additional rules that triggered the policy event.",
-            "requirement": "recommended",
-            "caption": "Rules",
-            "is_array": true,
-            "type": "rule",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "type_id": {
@@ -128,16 +96,48 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "type": {
-            "description": "The type of the policy.",
-            "caption": "Type",
+        "label": {
+            "requirement": "recommended",
+            "caption": "Label",
+            "description": "The label set for the policy.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "effective_time": {
+            "requirement": "recommended",
+            "caption": "Effective Date",
+            "description": "The date and time that the specific policy and rule was applied and became operational. ",
+            "type": "timestamp_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "rule": {
+            "description": "The primary rule that triggered the policy event.",
+            "requirement": "recommended",
+            "caption": "Rule",
+            "type": "rule",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "rules": {
+            "description": "Additional rules that triggered the policy event.",
+            "requirement": "recommended",
+            "caption": "Rules",
+            "is_array": true,
+            "type": "rule",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         }
     }

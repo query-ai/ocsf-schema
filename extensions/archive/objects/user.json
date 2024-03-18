@@ -1,13 +1,31 @@
 {
     "attributes": {
-        "uuid": {
-            "description": "The universally unique identifier of the user. For example, AWS ARN or Windows user GUID.",
-            "caption": "Unique User ID",
+        "account_uid": {
             "requirement": "optional",
+            "caption": "Account UID",
+            "description": "The unique identifier of the account(e.g. AWS Account ID).",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "name": {
+            "name": "username_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            },
+            "type": "string_t"
+        },
+        "session_uuid": {
+            "requirement": "optional",
+            "caption": "Session UUID",
+            "description": "The universally unique ID of the user session, as reported by the OS. For example, in Windows this is the Login GUID.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "session_uid": {
@@ -17,43 +35,7 @@
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "type_id": {
-            "name": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            },
-            "default": 0
-        },
-        "name": {
-            "name": "username_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            },
-            "type": "string_t"
-        },
-        "account_type": {
-            "requirement": "optional",
-            "caption": "Account Type",
-            "description": "The user account type, as defined by the event source.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
-            }
-        },
-        "org_uid": {
-            "requirement": "optional",
-            "caption": "Org ID",
-            "description": "The unique identifier of the organization to which the user belongs. For example, Active Directory or AWS Org ID.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "account_type_id": {
@@ -89,27 +71,45 @@
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "account_uid": {
+        "uuid": {
+            "description": "The universally unique identifier of the user. For example, AWS ARN or Windows user GUID.",
+            "caption": "Unique User ID",
             "requirement": "optional",
-            "caption": "Account UID",
-            "description": "The unique identifier of the account(e.g. AWS Account ID).",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "session_uuid": {
+        "type_id": {
+            "default": 0,
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            },
+            "name": "integer_t"
+        },
+        "account_type": {
             "requirement": "optional",
-            "caption": "Session UUID",
-            "description": "The universally unique ID of the user session, as reported by the OS. For example, in Windows this is the Login GUID.",
+            "caption": "Account Type",
+            "description": "The user account type, as defined by the event source.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0 on 2024-03-12 19:51:19.810820"
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "org_uid": {
+            "requirement": "optional",
+            "caption": "Org ID",
+            "description": "The unique identifier of the organization to which the user belongs. For example, Active Directory or AWS Org ID.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         }
     }
