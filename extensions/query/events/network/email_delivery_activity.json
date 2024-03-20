@@ -3,7 +3,7 @@
 	"@deprecated": {
 		"since": "1.1.0",
 		"message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-	}
+	},
   "caption": "Email Delivery Activity",
   "name": "email_delivery_activity",
   "category": "network",
@@ -45,7 +45,6 @@
                     "description": "The event activity is unknown."
                 }
             },
-            "$include": "enums/defaults.json",
             "requirement": "required",
             "caption": "Activity ID",
             "description": "The normalized identifier of the activity that triggered the event.",
@@ -347,6 +346,5 @@
     "profiles": [
         "host",
         "malware"
-    ],
-  }
+    ]
 }

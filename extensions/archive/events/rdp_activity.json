@@ -1,7 +1,11 @@
 {
     "attributes": {
-        "count": {
-            "default": 1,
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -17,43 +21,39 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "disposition_id": {
-            "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
-                },
-                "15": {
-                    "description": "Marked with extended attributes."
-                }
-            }
-        },
         "activity_id": {
             "enum": {
-                "2": {
-                    "description": "The network connection was closed."
-                },
-                "1": {
-                    "description": "A new network connection was opened."
-                },
                 "4": {
                     "description": "Network traffic report."
                 },
                 "3": {
                     "description": "The network connection was abnormally terminated or closed by a middle device like firewalls."
+                },
+                "1": {
+                    "description": "A new network connection was opened."
+                },
+                "2": {
+                    "description": "The network connection was closed."
+                }
+            }
+        },
+        "disposition_id": {
+            "enum": {
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 }
             }
         },

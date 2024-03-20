@@ -1,25 +1,5 @@
 {
     "attributes": {
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "disposition": {
-            "requirement": "optional",
-            "caption": "Disposition",
-            "description": "The event disposition name, as defined by the disposition_id.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "disposition_id": {
             "requirement": "required",
             "caption": "Disposition ID",
@@ -84,6 +64,16 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "count": {
             "default": 1,
             "@deprecated": {
@@ -91,29 +81,14 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
-            }
-        },
-        "confidence": {
-            "type": "integer_t",
+        "disposition": {
+            "requirement": "optional",
+            "caption": "Disposition",
+            "description": "The event disposition name, as defined by the disposition_id.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            },
-            "group": "classification"
-        },
-        "activity_id": {
-            "enum": {
-                "1": {
-                    "description": "A security finding is generated."
-                },
-                "2": {
-                    "description": "A security finding is updated."
-                }
             }
         },
         "resources": {
@@ -121,6 +96,31 @@
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "confidence": {
+            "group": "classification",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            },
+            "type": "integer_t"
+        },
+        "activity_id": {
+            "enum": {
+                "2": {
+                    "description": "A security finding is updated."
+                },
+                "1": {
+                    "description": "A security finding is generated."
+                }
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
+                }
             }
         }
     }

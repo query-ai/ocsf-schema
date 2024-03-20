@@ -10,13 +10,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "device": {
-            "group": "primary",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "actor": {
             "group": "primary",
             "@deprecated": {
@@ -42,23 +35,30 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
+        "device": {
+            "group": "primary",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
                 "15": {
                     "description": "Marked with extended attributes."
                 },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                },
                 "10": {
                     "description": "Requires reboot to finish the operation."
+                }
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
                 }
             }
         }

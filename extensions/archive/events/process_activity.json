@@ -1,7 +1,11 @@
 {
     "attributes": {
-        "count": {
-            "default": 1,
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -17,12 +21,8 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
+        "count": {
+            "default": 1,
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -30,14 +30,14 @@
         },
         "disposition_id": {
             "enum": {
-                "15": {
-                    "description": "Marked with extended attributes."
-                },
                 "10": {
                     "description": "Requires reboot to finish the operation."
                 },
                 "14": {
                     "description": "No longer suspicious (re-scored)."
+                },
+                "15": {
+                    "description": "Marked with extended attributes."
                 }
             }
         },
