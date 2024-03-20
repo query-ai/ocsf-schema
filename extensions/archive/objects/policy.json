@@ -10,32 +10,22 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "label": {
-            "requirement": "recommended",
-            "caption": "Label",
-            "description": "The label set for the policy.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "effective_time": {
-            "requirement": "recommended",
-            "caption": "Effective Date",
-            "description": "The date and time that the specific policy and rule was applied and became operational. ",
-            "type": "timestamp_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "rules": {
             "description": "Additional rules that triggered the policy event.",
             "requirement": "recommended",
             "caption": "Rules",
             "is_array": true,
             "type": "rule",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "label": {
+            "requirement": "recommended",
+            "caption": "Label",
+            "description": "The label set for the policy.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -126,6 +116,16 @@
             "default": 0,
             "sibling": "type",
             "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "effective_time": {
+            "requirement": "recommended",
+            "caption": "Effective Date",
+            "description": "The date and time that the specific policy and rule was applied and became operational. ",
+            "type": "timestamp_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"

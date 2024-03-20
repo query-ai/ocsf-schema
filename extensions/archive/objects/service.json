@@ -1,5 +1,155 @@
 {
     "attributes": {
+        "start_type_id": {
+            "description": "The service start type ID.",
+            "requirement": "required",
+            "caption": "Start Type ID",
+            "enum": {
+                "-1": {
+                    "caption": "Other",
+                    "description": "The start type is not mapped. See the <code>start_type</code> attribute, which contains a data source specific value."
+                },
+                "0": {
+                    "caption": "Unknown",
+                    "description": "The startup type is unknown."
+                },
+                "1": {
+                    "caption": "Auto",
+                    "description": "Started automatically during system startup."
+                },
+                "10": {
+                    "caption": "System Changed",
+                    "description": "Started when a system item, such as a file or registry key, changes."
+                },
+                "2": {
+                    "caption": "Boot",
+                    "description": "Started by the system loader."
+                },
+                "3": {
+                    "caption": "Demand",
+                    "description": "Started on demand. For example, by the Window service control manager when a process calls the <i>StartService</i> function."
+                },
+                "4": {
+                    "caption": "System",
+                    "description": "Started by the <i>IoInitSystem</i> function."
+                },
+                "5": {
+                    "caption": "Disabled",
+                    "description": "Disabled."
+                },
+                "6": {
+                    "caption": "All Logins",
+                    "description": "Started on any user login."
+                },
+                "7": {
+                    "caption": "Specific User Login",
+                    "description": "Started when on a specific user login."
+                },
+                "8": {
+                    "caption": "Interactive Login",
+                    "description": "Started on interactive logins."
+                },
+                "9": {
+                    "caption": "Scheduled",
+                    "description": "Stared according to a schedule."
+                }
+            },
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "types": {
+            "description": "The service types.",
+            "requirement": "optional",
+            "caption": "Types",
+            "is_array": true,
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "start_type": {
+            "description": "The service start type.",
+            "requirement": "optional",
+            "caption": "Start Type",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "run_state_id": {
+            "description": "The service run state ID.",
+            "requirement": "required",
+            "enum": {
+                "0": {
+                    "caption": "Unknown",
+                    "description": "The service run state is unknown."
+                },
+                "1": {
+                    "caption": "Stopped",
+                    "description": "The service is not running."
+                },
+                "2": {
+                    "caption": "Start Pending",
+                    "description": "The service is starting."
+                },
+                "3": {
+                    "caption": "Stop Pending",
+                    "description": "The service is stopping."
+                },
+                "4": {
+                    "caption": "Running",
+                    "description": "The service is running."
+                },
+                "5": {
+                    "caption": "Continue Pending",
+                    "description": "The service continue is pending."
+                },
+                "6": {
+                    "caption": "Pause Pending",
+                    "description": "The service pause is pending."
+                },
+                "7": {
+                    "caption": "Paused",
+                    "description": "The service is paused."
+                },
+                "-1": {
+                    "caption": "Other",
+                    "description": "The service run state is other."
+                }
+            },
+            "caption": "Run State ID",
+            "sibling": "run_state",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "loaded_module_name": {
+            "requirement": "recommended",
+            "caption": "Loaded Module",
+            "description": "The name of the module loaded by the service.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "run_state": {
+            "description": "The service run state.",
+            "requirement": "optional",
+            "caption": "Run State",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "file": {
             "description": "The service file object.",
             "requirement": "required",
@@ -71,156 +221,6 @@
                 }
             },
             "is_array": true,
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "start_type_id": {
-            "description": "The service start type ID.",
-            "requirement": "required",
-            "caption": "Start Type ID",
-            "enum": {
-                "-1": {
-                    "caption": "Other",
-                    "description": "The start type is not mapped. See the <code>start_type</code> attribute, which contains a data source specific value."
-                },
-                "0": {
-                    "caption": "Unknown",
-                    "description": "The startup type is unknown."
-                },
-                "1": {
-                    "caption": "Auto",
-                    "description": "Started automatically during system startup."
-                },
-                "10": {
-                    "caption": "System Changed",
-                    "description": "Started when a system item, such as a file or registry key, changes."
-                },
-                "2": {
-                    "caption": "Boot",
-                    "description": "Started by the system loader."
-                },
-                "3": {
-                    "caption": "Demand",
-                    "description": "Started on demand. For example, by the Window service control manager when a process calls the <i>StartService</i> function."
-                },
-                "4": {
-                    "caption": "System",
-                    "description": "Started by the <i>IoInitSystem</i> function."
-                },
-                "5": {
-                    "caption": "Disabled",
-                    "description": "Disabled."
-                },
-                "6": {
-                    "caption": "All Logins",
-                    "description": "Started on any user login."
-                },
-                "7": {
-                    "caption": "Specific User Login",
-                    "description": "Started when on a specific user login."
-                },
-                "8": {
-                    "caption": "Interactive Login",
-                    "description": "Started on interactive logins."
-                },
-                "9": {
-                    "caption": "Scheduled",
-                    "description": "Stared according to a schedule."
-                }
-            },
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "loaded_module_name": {
-            "requirement": "recommended",
-            "caption": "Loaded Module",
-            "description": "The name of the module loaded by the service.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "start_type": {
-            "description": "The service start type.",
-            "requirement": "optional",
-            "caption": "Start Type",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "types": {
-            "description": "The service types.",
-            "requirement": "optional",
-            "caption": "Types",
-            "is_array": true,
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "run_state": {
-            "description": "The service run state.",
-            "requirement": "optional",
-            "caption": "Run State",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "run_state_id": {
-            "description": "The service run state ID.",
-            "requirement": "required",
-            "enum": {
-                "0": {
-                    "caption": "Unknown",
-                    "description": "The service run state is unknown."
-                },
-                "1": {
-                    "caption": "Stopped",
-                    "description": "The service is not running."
-                },
-                "2": {
-                    "caption": "Start Pending",
-                    "description": "The service is starting."
-                },
-                "3": {
-                    "caption": "Stop Pending",
-                    "description": "The service is stopping."
-                },
-                "4": {
-                    "caption": "Running",
-                    "description": "The service is running."
-                },
-                "5": {
-                    "caption": "Continue Pending",
-                    "description": "The service continue is pending."
-                },
-                "6": {
-                    "caption": "Pause Pending",
-                    "description": "The service pause is pending."
-                },
-                "7": {
-                    "caption": "Paused",
-                    "description": "The service is paused."
-                },
-                "-1": {
-                    "caption": "Other",
-                    "description": "The service run state is other."
-                }
-            },
-            "caption": "Run State ID",
-            "sibling": "run_state",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",

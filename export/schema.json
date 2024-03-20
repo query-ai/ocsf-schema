@@ -86,10 +86,6 @@
         "type": "integer_t"
       },
       "count": {
-        "@deprecated": {
-          "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-          "since": "1.1.0"
-        },
         "caption": "Count",
         "default": 1,
         "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -486,10 +482,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -903,10 +895,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -1279,10 +1267,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -1628,10 +1612,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -2072,10 +2052,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -2133,10 +2109,6 @@
           "type": "http_request"
         },
         "is_cleartext": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Cleartext Credentials",
           "description": "Indicates whether the credentials were passed in clear text.<p><b>Note:</b> True if the credentials were passed in a clear text protocol such as FTP or TELNET, or if Windows detected that a user's logon password was passed to the authentication package in clear text.</p>",
           "group": "primary",
@@ -2588,10 +2560,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -2956,10 +2924,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -3334,10 +3298,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -3729,10 +3689,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -4107,10 +4063,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -4648,10 +4600,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -5280,10 +5228,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -5796,10 +5740,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -6425,10 +6365,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -6782,10 +6718,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -7198,10 +7130,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -7872,10 +7800,6 @@
           "type": "string_t"
         },
         "actor": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Actor",
           "description": "The actor object describes details about the user/role/process that was the source of the activity.",
           "group": "primary",
@@ -7972,11 +7896,18 @@
           "requirement": "optional",
           "type": "integer_t"
         },
-        "count": {
+        "connection_uid": {
           "@deprecated": {
             "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
             "since": "1.1.0"
           },
+          "caption": "Connection Identifier",
+          "description": "The network connection identifier.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "count": {
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -7994,10 +7925,6 @@
           "type": "json_t"
         },
         "device": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Device",
           "description": "An addressable device, computer system or host.",
           "group": "primary",
@@ -8198,6 +8125,17 @@
           "group": "primary",
           "requirement": "recommended",
           "type": "email_auth"
+        },
+        "email_uid": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Email UID",
+          "description": "The unique identifier of the email, used to correlate related email alert and activity events.",
+          "group": "primary",
+          "requirement": "recommended",
+          "type": "string_t"
         },
         "end_time": {
           "caption": "End Time",
@@ -8501,6 +8439,28 @@
           "requirement": "optional",
           "type": "attack"
         },
+        "attempt": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Attempt",
+          "description": "The delivery attempt.",
+          "group": "context",
+          "requirement": "recommended",
+          "type": "integer_t"
+        },
+        "banner": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "SMTP Banner",
+          "description": "The initial SMTP connection response that a messaging server receives after it connects to a email server.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "string_t"
+        },
         "category_name": {
           "@deprecated": {
             "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
@@ -8545,6 +8505,17 @@
           "group": "classification",
           "requirement": "optional",
           "type": "integer_t"
+        },
+        "connection_uid": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Connection Identifier",
+          "description": "The network connection identifier.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "string_t"
         },
         "count": {
           "caption": "Count",
@@ -8636,10 +8607,54 @@
           "sibling": "disposition",
           "type": "integer_t"
         },
+        "dkim_signature": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "DKIM Signature",
+          "description": "The DomainKeys Identified Mail (DKIM) signature used by the sending/receiving system.",
+          "group": "context",
+          "requirement": "recommended",
+          "type": "string_t"
+        },
         "duration": {
           "caption": "Duration",
           "description": "The event duration or aggregate time, the amount of time the event covers from <code>start_time</code> to <code>end_time</code> in milliseconds.",
           "type": "integer_t"
+        },
+        "email": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Email",
+          "description": "The email object.",
+          "group": "primary",
+          "requirement": "required",
+          "type": "email"
+        },
+        "email_auth": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Email Authentication",
+          "description": "The SPF, DKIM and DMARC attributes of an email.",
+          "group": "primary",
+          "requirement": "recommended",
+          "type": "email_auth"
+        },
+        "email_uid": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Email UID",
+          "description": "The unique identifier of the email, used to correlate related email alert and activity events.",
+          "group": "primary",
+          "requirement": "recommended",
+          "type": "string_t"
         },
         "end_time": {
           "caption": "End Time",
@@ -8695,12 +8710,56 @@
           "group": "context",
           "type": "json_t"
         },
+        "receiver_hostname": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Sender Host Name",
+          "description": "The host name of the receiving email server.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "hostname_t"
+        },
+        "receiver_ip": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Sender IP Address",
+          "description": "The IP address of the receiving email server, in either IPv4 or IPv6 format.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "ip_t"
+        },
         "record_id": {
           "caption": "Record ID",
           "description": "Unique idenifier for the event",
           "group": "primary",
           "requirement": "required",
           "type": "string_t"
+        },
+        "sender_hostname": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Sender Host Name",
+          "description": "The host name of the sending email server.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "hostname_t"
+        },
+        "sender_ip": {
+          "@deprecated": {
+            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "since": "1.1.0"
+          },
+          "caption": "Sender IP Address",
+          "description": "The IP address of the sending email server, in either IPv4 or IPv6 format.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "ip_t"
         },
         "severity": {
           "caption": "Severity",
@@ -8947,10 +9006,6 @@
           "type": "string_t"
         },
         "actor": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Actor",
           "description": "The actor object describes details about the user/role/process that was the source of the activity.",
           "group": "primary",
@@ -9033,11 +9088,18 @@
           "requirement": "optional",
           "type": "integer_t"
         },
-        "count": {
+        "connection_uid": {
           "@deprecated": {
             "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
             "since": "1.1.0"
           },
+          "caption": "Connection Identifier",
+          "description": "The network connection identifier.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "count": {
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -9055,10 +9117,6 @@
           "type": "json_t"
         },
         "device": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Device",
           "description": "An addressable device, computer system or host.",
           "group": "primary",
@@ -9515,10 +9573,6 @@
           "type": "string_t"
         },
         "actor": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Actor",
           "description": "The actor object describes details about the user/role/process that was the source of the activity.",
           "group": "primary",
@@ -9601,11 +9655,18 @@
           "requirement": "optional",
           "type": "integer_t"
         },
-        "count": {
+        "connection_uid": {
           "@deprecated": {
             "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
             "since": "1.1.0"
           },
+          "caption": "Connection Identifier",
+          "description": "The network connection identifier.",
+          "group": "context",
+          "requirement": "optional",
+          "type": "string_t"
+        },
+        "count": {
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -9623,10 +9684,6 @@
           "type": "json_t"
         },
         "device": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Device",
           "description": "An addressable device, computer system or host.",
           "group": "primary",
@@ -10125,10 +10182,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -10612,10 +10665,6 @@
           "type": "string_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -11230,10 +11279,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -11691,10 +11736,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -12133,10 +12174,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -12753,10 +12790,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -13224,10 +13257,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -13836,10 +13865,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -14222,10 +14247,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -14772,10 +14793,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -15186,10 +15203,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -15743,10 +15756,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -16328,10 +16337,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -16908,10 +16913,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -17452,10 +17453,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -18080,10 +18077,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -18787,10 +18780,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -19490,10 +19479,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -20152,10 +20137,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -20546,10 +20527,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -20999,10 +20976,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -21644,10 +21617,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -22341,10 +22310,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -22904,10 +22869,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -22987,10 +22948,6 @@
           "type": "string_t"
         },
         "reg_key": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Registry Key",
           "description": "The registry key that pertains to the event.",
           "group": "primary",
@@ -23337,10 +23294,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -23869,10 +23822,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -23952,10 +23901,6 @@
           "type": "string_t"
         },
         "reg_value": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Registry Value",
           "description": "The registry value that pertains to the event.",
           "group": "primary",
@@ -24293,10 +24238,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -24827,10 +24768,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -25350,10 +25287,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -25922,10 +25855,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -26185,10 +26114,6 @@
           "type": "string_t"
         },
         "resources": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Resources Array",
           "description": "Describes details about resources that were affected by the activity/event.",
           "group": "primary",
@@ -26640,10 +26565,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -27434,10 +27355,6 @@
           "type": "network_connection_info"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -28076,10 +27993,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -28551,10 +28464,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -28926,10 +28835,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -29327,10 +29232,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -29720,10 +29621,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -30224,10 +30121,6 @@
           "type": "integer_t"
         },
         "count": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Count",
           "default": 1,
           "description": "The number of times that events in the same logical group occurred during the event <strong>Start Time</strong> to <strong>End Time</strong> period.",
@@ -33642,10 +33535,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The device type ID.",
@@ -34287,10 +34176,6 @@
           "type": "string_t"
         },
         "domain_info": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "description": "The registration information pertaining to a domain.",
           "requirement": "optional",
           "type": "domain_info"
@@ -35146,10 +35031,6 @@
           "type": "timestamp_t"
         },
         "accessor": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Accessor",
           "description": "The name of the user who last accessed the object.",
           "requirement": "optional",
@@ -35209,10 +35090,6 @@
           "type": "timestamp_t"
         },
         "creator": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Creator",
           "description": "The user that created the file.",
           "requirement": "optional",
@@ -35261,20 +35138,12 @@
           "type": "timestamp_t"
         },
         "modifier": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Modifier",
           "description": "The user that last modified the file.",
           "requirement": "optional",
           "type": "string_t"
         },
         "name": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Name",
           "description": "The name of the file. For example: <code>svchost.exe</code>",
           "name": "file_name_t",
@@ -35282,30 +35151,18 @@
           "type": "string_t"
         },
         "owner": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Owner",
           "description": "The user that owns the file/object.",
           "requirement": "optional",
           "type": "string_t"
         },
         "parent_folder": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Parent Folder",
           "description": "The parent folder in which the file resides. For example: <code>c:\\windows\\system32</code>",
           "requirement": "optional",
           "type": "path_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The full path to the file. For example: <code>c:\\windows\\system32\\svchost.exe</code>.",
           "requirement": "recommended",
@@ -35355,10 +35212,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The file type ID.",
@@ -35595,20 +35448,12 @@
           "type": "remediation"
         },
         "src_url": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Source URL",
           "description": "The URL pointing to the source of the finding.",
           "requirement": "optional",
           "type": "string_t"
         },
         "supporting_data": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Supporting Data",
           "description": "Additional data supporting a finding as provided by security tool",
           "is_array": true,
@@ -35830,10 +35675,6 @@
           "type": "string_t"
         },
         "value": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Value",
           "description": "The digital fingerprint value.",
           "requirement": "required",
@@ -36086,10 +35927,6 @@
           "type": "string_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The path of the HTTP cookie.",
           "requirement": "optional",
@@ -36422,10 +36259,6 @@
           "type": "string_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The full path to the image file.",
           "requirement": "optional",
@@ -36764,10 +36597,6 @@
           "type": "string_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The full path of the kernel resource.",
           "requirement": "optional",
@@ -36799,10 +36628,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The type of the kernel resource.",
@@ -37503,10 +37328,6 @@
           "type": "string_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The filesystem path of the malware that was observed.",
           "requirement": "recommended",
@@ -37558,10 +37379,6 @@
           "type": "json_t"
         },
         "name": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Name",
           "description": "The name of the managed entity.",
           "notes": "For example <i>Browser Isolation Policy.",
@@ -37582,10 +37399,6 @@
           "type": "string_t"
         },
         "type": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type",
           "description": "The managed entity type. For example: <code>policy</code>, <code>user</code>, <code>organizational unit</code>, <code>device</code>.",
           "notes": "For example: <i>policy</i>, <i>user</i>, <i>organizational unit</i>, <i>device</i>.",
@@ -37753,10 +37566,6 @@
           "type": "string_t"
         },
         "version": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Version",
           "default": "1.0.0",
           "description": "The version of the OCSF schema, using Semantic Versioning Specification (<a target='_blank' href='https://semver.org'>SemVer</a>). For example: 1.0.0. Event consumers use the version to determine the available event attributes.",
@@ -38396,10 +38205,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The network interface type identifier.",
@@ -38710,10 +38515,6 @@
     "network_traffic": {
       "attributes": {
         "bytes": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Total Bytes",
           "default": 0,
           "description": "The total number of bytes (in and out).",
@@ -38721,10 +38522,6 @@
           "type": "long_t"
         },
         "bytes_in": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Bytes In",
           "default": 0,
           "description": "The number of bytes sent from the destination to the source.",
@@ -38732,10 +38529,6 @@
           "type": "long_t"
         },
         "bytes_out": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Bytes Out",
           "default": 0,
           "description": "The number of bytes sent from the source to the destination.",
@@ -38761,10 +38554,6 @@
           "type": "long_t"
         },
         "packets": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Total Packets",
           "default": 0,
           "description": "The total number of packets (in and out).",
@@ -38772,10 +38561,6 @@
           "type": "long_t"
         },
         "packets_in": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Packets In",
           "default": 0,
           "description": "The number of packets sent from the destination to the source.",
@@ -38783,10 +38568,6 @@
           "type": "long_t"
         },
         "packets_out": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Packets Out",
           "default": 0,
           "description": "The number of packets sent from the source to the destination.",
@@ -39109,10 +38890,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The type identifier of the operating system.",
@@ -39554,10 +39331,6 @@
           "type": "group"
         },
         "integrity": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Integrity",
           "description": "The process integrity level, normalized to the caption of the direction_id value. In the case of 'Other', it is defined by the event source (Windows only).",
           "requirement": "optional",
@@ -39612,10 +39385,6 @@
           "type": "string_t"
         },
         "name": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Name",
           "description": "The friendly name of the process, for example: <code>Notepad++</code>.",
           "name": "process_name_t",
@@ -39738,10 +39507,6 @@
           "type": "string_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The installation path of the product.",
           "type": "path_t"
@@ -41755,10 +41520,6 @@
           "type": "reputation"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "Type of entity for which threat info is provided e.g. IP",
@@ -41990,10 +41751,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The TLS extension type identifier. See <a target='_blank' href='https://datatracker.ietf.org/doc/html/rfc8446#page-35'>The Transport Layer Security (TLS) extension page</a>.",
@@ -42389,10 +42146,6 @@
           "type": "hostname_t"
         },
         "path": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Path",
           "description": "The URL path as extracted from the URL. For example: <code>/download/trouble</code> from <code>www.example.com/download/trouble</code>.",
           "requirement": "recommended",
@@ -42947,10 +42700,6 @@
           "type": "ldap_person"
         },
         "name": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Name",
           "description": "The username. For example, <code>janedoe1</code>.",
           "name": "username_t",
@@ -43013,10 +42762,6 @@
           "type": "string_t"
         },
         "type_id": {
-          "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
-            "since": "1.1.0"
-          },
           "caption": "Type ID",
           "default": 0,
           "description": "The account type identifier.",
@@ -43185,7 +42930,7 @@
         },
         "packages": {
           "@deprecated": {
-            "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
+            "message": "Use the <code> affected_packages </code> attribute instead.",
             "since": "1.1.0"
           },
           "caption": "Software Packages",

@@ -11,31 +11,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "activity_id": {
-            "enum": {
-                "4": {
-                    "caption": "Traffic",
-                    "description": "Network traffic report."
-                },
-                "3": {
-                    "caption": "Query",
-                    "description": "The DNS query request."
-                },
-                "2": {
-                    "description": "The DNS request was unresolved."
-                },
-                "1": {
-                    "description": "The DNS request was successfully resolved."
-                }
-            }
-        },
-        "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "data": {
             "description": "Additional data that is associated with the event.",
             "requirement": "optional",
@@ -46,16 +21,37 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "activity_id": {
+            "enum": {
+                "4": {
+                    "caption": "Traffic",
+                    "description": "Network traffic report."
+                },
+                "3": {
+                    "caption": "Query",
+                    "description": "The DNS query request."
+                },
+                "1": {
+                    "description": "The DNS request was successfully resolved."
+                },
+                "2": {
+                    "description": "The DNS request was unresolved."
+                }
+            }
+        },
+        "count": {
+            "default": 1
+        },
         "disposition_id": {
             "enum": {
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
                 "14": {
                     "description": "No longer suspicious (re-scored)."
                 },
                 "10": {
                     "description": "Requires reboot to finish the operation."
-                },
-                "15": {
-                    "description": "Marked with extended attributes."
                 }
             }
         },

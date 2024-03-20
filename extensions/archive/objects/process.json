@@ -2,18 +2,10 @@
     "attributes": {
         "name": {
             "name": "process_name_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            },
             "type": "string_t"
         },
         "integrity": {
-            "sibling": "integrity",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "sibling": "integrity"
         }
     }
 }

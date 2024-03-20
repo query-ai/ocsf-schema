@@ -1,12 +1,5 @@
 {
     "attributes": {
-        "supporting_data": {
-            "is_array": true,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "related_findings": {
             "requirement": "optional",
             "caption": "Related Findings",
@@ -18,12 +11,11 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "supporting_data": {
+            "is_array": true
+        },
         "src_url": {
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "type": "string_t"
         }
     }
 }

@@ -1,11 +1,7 @@
 {
     "attributes": {
         "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "default": 1
         },
         "confidence": {
             "group": "classification",
@@ -30,11 +26,8 @@
         },
         "activity_id": {
             "enum": {
-                "7": {
-                    "description": "A user account was changed."
-                },
-                "1": {
-                    "description": "A user account was created."
+                "8": {
+                    "description": "A user account was locked out."
                 },
                 "5": {
                     "description": "A user account was disabled."
@@ -42,8 +35,11 @@
                 "6": {
                     "description": "A user account was deleted."
                 },
-                "8": {
-                    "description": "A user account was locked out."
+                "1": {
+                    "description": "A user account was created."
+                },
+                "7": {
+                    "description": "A user account was changed."
                 },
                 "2": {
                     "description": "A user account was enabled."

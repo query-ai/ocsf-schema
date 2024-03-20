@@ -1,5 +1,12 @@
 {
     "attributes": {
+        "type_id": {
+            "default": 0
+        },
+        "name": {
+            "name": "file_name_t",
+            "type": "string_t"
+        },
         "fingerprints": {
             "requirement": "recommended",
             "caption": "Fingerprints",
@@ -11,62 +18,23 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "name": {
-            "name": "file_name_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            },
+        "creator": {
             "type": "string_t"
         },
-        "type_id": {
-            "default": 0,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+        "owner": {
+            "type": "string_t"
         },
         "parent_folder": {
-            "type": "path_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "path": {
-            "type": "path_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "type": "path_t"
         },
         "accessor": {
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "type": "string_t"
         },
-        "creator": {
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+        "path": {
+            "type": "path_t"
         },
         "modifier": {
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "owner": {
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "type": "string_t"
         }
     }
 }

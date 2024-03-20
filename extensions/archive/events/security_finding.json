@@ -1,5 +1,15 @@
 {
     "attributes": {
+        "disposition": {
+            "requirement": "optional",
+            "caption": "Disposition",
+            "description": "The event disposition name, as defined by the disposition_id.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "disposition_id": {
             "requirement": "required",
             "caption": "Disposition ID",
@@ -75,44 +85,18 @@
             }
         },
         "count": {
-            "default": 1,
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "disposition": {
-            "requirement": "optional",
-            "caption": "Disposition",
-            "description": "The event disposition name, as defined by the disposition_id.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+            "default": 1
         },
         "resources": {
-            "type": "resource",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "confidence": {
-            "group": "classification",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            },
-            "type": "integer_t"
+            "type": "resource"
         },
         "activity_id": {
             "enum": {
-                "2": {
-                    "description": "A security finding is updated."
-                },
                 "1": {
                     "description": "A security finding is generated."
+                },
+                "2": {
+                    "description": "A security finding is updated."
                 }
             }
         },
@@ -122,6 +106,10 @@
                     "description": "The event severity is not known."
                 }
             }
+        },
+        "confidence": {
+            "type": "integer_t",
+            "group": "classification"
         }
     }
 }
