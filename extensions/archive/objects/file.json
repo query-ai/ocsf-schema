@@ -1,11 +1,11 @@
 {
     "attributes": {
-        "type_id": {
-            "default": 0
-        },
         "name": {
             "name": "file_name_t",
             "type": "string_t"
+        },
+        "type_id": {
+            "default": 0
         },
         "fingerprints": {
             "requirement": "recommended",
@@ -21,11 +21,11 @@
         "creator": {
             "type": "string_t"
         },
-        "owner": {
-            "type": "string_t"
-        },
         "parent_folder": {
             "type": "path_t"
+        },
+        "modifier": {
+            "type": "string_t"
         },
         "accessor": {
             "type": "string_t"
@@ -33,7 +33,7 @@
         "path": {
             "type": "path_t"
         },
-        "modifier": {
+        "owner": {
             "type": "string_t"
         }
     }

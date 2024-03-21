@@ -1,15 +1,5 @@
 {
     "attributes": {
-        "serial_number": {
-            "description": "The serial number of the digital signature.",
-            "requirement": "optional",
-            "caption": "Serial Number",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "company_name": {
             "requirement": "required",
             "caption": "Company Name",
@@ -24,6 +14,16 @@
             "requirement": "optional",
             "caption": "Issuer Name",
             "description": "The certificate issuer name.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "serial_number": {
+            "description": "The serial number of the digital signature.",
+            "requirement": "optional",
+            "caption": "Serial Number",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",

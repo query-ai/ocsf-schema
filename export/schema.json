@@ -436,8 +436,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -849,8 +850,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -1222,8 +1224,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -1566,8 +1569,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -1999,8 +2003,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -2514,8 +2519,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -3205,8 +3211,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "2": {
+              "caption": "Findings",
+              "description": "Findings events report findings, detections, and possible resolutions of malware, anomalies, or other actions performed by security products."
             }
           },
           "requirement": "required",
@@ -3625,8 +3632,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -4017,8 +4025,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -4514,8 +4523,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "2": {
+              "caption": "Findings",
+              "description": "Findings events report findings, detections, and possible resolutions of malware, anomalies, or other actions performed by security products."
             }
           },
           "requirement": "required",
@@ -5171,8 +5181,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -5687,8 +5698,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -6309,8 +6321,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -6662,8 +6675,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -7077,8 +7091,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -7851,8 +7866,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -8471,6 +8487,18 @@
           "requirement": "optional",
           "type": "string_t"
         },
+        "category_uid": {
+          "caption": "Category ID",
+          "description": "The category unique identifier of the event.",
+          "enum": {
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
+            }
+          },
+          "sibling": "category_name",
+          "type": "integer_t"
+        },
         "class_name": {
           "@deprecated": {
             "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0",
@@ -9043,8 +9071,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -9610,8 +9639,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -10129,8 +10159,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -10605,8 +10636,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -11227,8 +11259,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -11651,8 +11684,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "2": {
+              "caption": "Findings",
+              "description": "Findings events report findings, detections, and possible resolutions of malware, anomalies, or other actions performed by security products."
             }
           },
           "requirement": "required",
@@ -12098,8 +12132,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -12744,8 +12779,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -13204,8 +13240,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -13820,8 +13857,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -14161,8 +14199,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "2": {
+              "caption": "Findings",
+              "description": "Findings events report findings, detections, and possible resolutions of malware, anomalies, or other actions performed by security products."
             }
           },
           "requirement": "required",
@@ -14736,8 +14775,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -15157,8 +15197,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -15710,8 +15751,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -16291,8 +16333,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -16867,8 +16910,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -17401,8 +17445,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -18024,8 +18069,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -18727,8 +18773,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -19426,8 +19473,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -20080,8 +20128,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -20470,8 +20519,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -20930,8 +20980,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -21556,8 +21607,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -22264,8 +22316,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -22812,8 +22865,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -23248,8 +23302,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -23765,8 +23820,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -24192,8 +24248,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -24715,8 +24772,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -25241,8 +25299,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -25760,8 +25819,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "2": {
+              "caption": "Findings",
+              "description": "Findings events report findings, detections, and possible resolutions of malware, anomalies, or other actions performed by security products."
             }
           },
           "requirement": "required",
@@ -26115,7 +26175,7 @@
         },
         "resources": {
           "caption": "Resources Array",
-          "description": "Describes details about resources that were affected by the activity/event.",
+          "description": "A list of resources associated to an event.",
           "group": "primary",
           "is_array": true,
           "requirement": "recommended",
@@ -26497,8 +26557,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -27295,8 +27356,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "4": {
+              "caption": "Network Activity",
+              "description": "Network Activity events."
             }
           },
           "requirement": "required",
@@ -27948,8 +28010,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "1": {
+              "caption": "System Activity",
+              "description": "System Activity events."
             }
           },
           "requirement": "required",
@@ -28418,8 +28481,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "3": {
+              "caption": "Identity & Access Management",
+              "description": "Identity & Access Management (IAM) events relate to the supervision of the system's authentication and access control model. Examples of such events are the success or failure of authentication, granting of authority, password change, entity change, privileged use etc."
             }
           },
           "requirement": "required",
@@ -28778,8 +28842,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "5": {
+              "caption": "Discovery",
+              "description": "Discovery events report the existence and state of devices, files, configurations, processes, registry keys, and other objects."
             }
           },
           "requirement": "required",
@@ -29146,8 +29211,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "2": {
+              "caption": "Findings",
+              "description": "Findings events report findings, detections, and possible resolutions of malware, anomalies, or other actions performed by security products."
             }
           },
           "requirement": "required",
@@ -29575,8 +29641,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",
@@ -30075,8 +30142,9 @@
           "caption": "Category ID",
           "description": "The category unique identifier of the event.",
           "enum": {
-            "0": {
-              "caption": "Uncategorized"
+            "6": {
+              "caption": "Application Activity",
+              "description": "Application Activity events report detailed information about the behavior of applications and services."
             }
           },
           "requirement": "required",

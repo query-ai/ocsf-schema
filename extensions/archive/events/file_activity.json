@@ -1,8 +1,5 @@
 {
     "attributes": {
-        "count": {
-            "default": 1
-        },
         "confidence": {
             "group": "classification",
             "requirement": "optional",
@@ -24,23 +21,26 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
-            }
+        "count": {
+            "default": 1
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
+                "10": {
+                    "description": "Requires reboot to finish the operation."
                 },
                 "15": {
                     "description": "Marked with extended attributes."
                 },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
+                }
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
                 }
             }
         }

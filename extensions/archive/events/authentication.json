@@ -3,16 +3,6 @@
         "count": {
             "default": 1
         },
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "confidence": {
             "group": "classification",
             "requirement": "optional",
@@ -24,8 +14,15 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "is_cleartext": {
-            "group": "primary"
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
         },
         "severity_id": {
             "enum": {
@@ -33,6 +30,9 @@
                     "description": "The event severity is not known."
                 }
             }
+        },
+        "is_cleartext": {
+            "group": "primary"
         }
     }
 }

@@ -1,70 +1,19 @@
 {
     "attributes": {
-        "start_type_id": {
-            "description": "The service start type ID.",
-            "requirement": "required",
-            "caption": "Start Type ID",
-            "enum": {
-                "-1": {
-                    "caption": "Other",
-                    "description": "The start type is not mapped. See the <code>start_type</code> attribute, which contains a data source specific value."
-                },
-                "0": {
-                    "caption": "Unknown",
-                    "description": "The startup type is unknown."
-                },
-                "1": {
-                    "caption": "Auto",
-                    "description": "Started automatically during system startup."
-                },
-                "10": {
-                    "caption": "System Changed",
-                    "description": "Started when a system item, such as a file or registry key, changes."
-                },
-                "2": {
-                    "caption": "Boot",
-                    "description": "Started by the system loader."
-                },
-                "3": {
-                    "caption": "Demand",
-                    "description": "Started on demand. For example, by the Window service control manager when a process calls the <i>StartService</i> function."
-                },
-                "4": {
-                    "caption": "System",
-                    "description": "Started by the <i>IoInitSystem</i> function."
-                },
-                "5": {
-                    "caption": "Disabled",
-                    "description": "Disabled."
-                },
-                "6": {
-                    "caption": "All Logins",
-                    "description": "Started on any user login."
-                },
-                "7": {
-                    "caption": "Specific User Login",
-                    "description": "Started when on a specific user login."
-                },
-                "8": {
-                    "caption": "Interactive Login",
-                    "description": "Started on interactive logins."
-                },
-                "9": {
-                    "caption": "Scheduled",
-                    "description": "Stared according to a schedule."
-                }
-            },
-            "type": "integer_t",
+        "run_state": {
+            "description": "The service run state.",
+            "requirement": "optional",
+            "caption": "Run State",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "types": {
-            "description": "The service types.",
-            "requirement": "optional",
-            "caption": "Types",
-            "is_array": true,
+        "loaded_module_name": {
+            "requirement": "recommended",
+            "caption": "Loaded Module",
+            "description": "The name of the module loaded by the service.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -130,21 +79,82 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "loaded_module_name": {
+        "cmd_line": {
             "requirement": "recommended",
-            "caption": "Loaded Module",
-            "description": "The name of the module loaded by the service.",
+            "caption": "Command Line",
+            "description": "The full command line used to launch an application, service, process, or job. For example: <code>ssh user@10.0.0.10</code>. If the command line is unavailable or missing, the empty string <code>''</code> is to be used",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "run_state": {
-            "description": "The service run state.",
+        "types": {
+            "description": "The service types.",
             "requirement": "optional",
-            "caption": "Run State",
+            "caption": "Types",
+            "is_array": true,
             "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "start_type_id": {
+            "description": "The service start type ID.",
+            "requirement": "required",
+            "caption": "Start Type ID",
+            "enum": {
+                "-1": {
+                    "caption": "Other",
+                    "description": "The start type is not mapped. See the <code>start_type</code> attribute, which contains a data source specific value."
+                },
+                "0": {
+                    "caption": "Unknown",
+                    "description": "The startup type is unknown."
+                },
+                "1": {
+                    "caption": "Auto",
+                    "description": "Started automatically during system startup."
+                },
+                "10": {
+                    "caption": "System Changed",
+                    "description": "Started when a system item, such as a file or registry key, changes."
+                },
+                "2": {
+                    "caption": "Boot",
+                    "description": "Started by the system loader."
+                },
+                "3": {
+                    "caption": "Demand",
+                    "description": "Started on demand. For example, by the Window service control manager when a process calls the <i>StartService</i> function."
+                },
+                "4": {
+                    "caption": "System",
+                    "description": "Started by the <i>IoInitSystem</i> function."
+                },
+                "5": {
+                    "caption": "Disabled",
+                    "description": "Disabled."
+                },
+                "6": {
+                    "caption": "All Logins",
+                    "description": "Started on any user login."
+                },
+                "7": {
+                    "caption": "Specific User Login",
+                    "description": "Started when on a specific user login."
+                },
+                "8": {
+                    "caption": "Interactive Login",
+                    "description": "Started on interactive logins."
+                },
+                "9": {
+                    "caption": "Scheduled",
+                    "description": "Stared according to a schedule."
+                }
+            },
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -155,16 +165,6 @@
             "requirement": "required",
             "caption": "File",
             "type": "file",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "cmd_line": {
-            "requirement": "recommended",
-            "caption": "Command Line",
-            "description": "The full command line used to launch an application, service, process, or job. For example: <code>ssh user@10.0.0.10</code>. If the command line is unavailable or missing, the empty string <code>''</code> is to be used",
-            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"

@@ -1,21 +1,21 @@
 {
     "attributes": {
-        "bytes_in": {
-            "default": 0
-        },
-        "packets_in": {
+        "packets": {
             "default": 0
         },
         "bytes_out": {
             "default": 0
         },
-        "bytes": {
+        "packets_in": {
             "default": 0
         },
         "packets_out": {
             "default": 0
         },
-        "packets": {
+        "bytes_in": {
+            "default": 0
+        },
+        "bytes": {
             "default": 0
         }
     }

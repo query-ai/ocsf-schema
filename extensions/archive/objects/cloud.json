@@ -1,5 +1,15 @@
 {
     "attributes": {
+        "resource_uid": {
+            "requirement": "optional",
+            "caption": "Resource ID",
+            "description": "The unique identifier of a cloud resource. For example, S3 Bucket name, EC2 Instance Id.",
+            "type": "resource_uid_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "account_type_id": {
             "requirement": "optional",
             "caption": "Account Type ID",
@@ -36,16 +46,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "account_type": {
-            "requirement": "optional",
-            "caption": "Account Type",
-            "description": "The user account type, as defined by the event source.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "account_uid": {
             "requirement": "recommended",
             "caption": "Account UID",
@@ -56,11 +56,11 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "resource_uid": {
+        "account_type": {
             "requirement": "optional",
-            "caption": "Resource ID",
-            "description": "The unique identifier of a cloud resource. For example, S3 Bucket name, EC2 Instance Id.",
-            "type": "resource_uid_t",
+            "caption": "Account Type",
+            "description": "The user account type, as defined by the event source.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"

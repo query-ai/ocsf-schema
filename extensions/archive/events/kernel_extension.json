@@ -26,11 +26,11 @@
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
                 "10": {
                     "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 },
                 "15": {
                     "description": "Marked with extended attributes."
