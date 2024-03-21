@@ -7,7 +7,7 @@
   "caption": "Email Delivery Activity",
   "name": "email_delivery_activity",
   "category": "network",
-  "uid": 10,
+  "uid": 30,
   "attributes": {
     "file": {
       "description": "The email file attachment.",
