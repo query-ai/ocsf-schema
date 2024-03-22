@@ -1,8 +1,5 @@
 {
     "attributes": {
-        "count": {
-            "default": 1
-        },
         "data": {
             "description": "Additional data that is associated with the event.",
             "requirement": "optional",
@@ -12,6 +9,9 @@
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
+        },
+        "count": {
+            "default": 1
         },
         "confidence": {
             "group": "classification",
@@ -24,10 +24,16 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "activity_id": {
+        "disposition_id": {
             "enum": {
-                "4": {
-                    "description": "Network traffic report."
+                "10": {
+                    "description": "Requires reboot to finish the operation."
+                },
+                "15": {
+                    "description": "Marked with extended attributes."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 }
             }
         },
@@ -35,19 +41,6 @@
             "enum": {
                 "0": {
                     "description": "The event severity is not known."
-                }
-            }
-        },
-        "disposition_id": {
-            "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
-                "15": {
-                    "description": "Marked with extended attributes."
-                },
-                "10": {
-                    "description": "Requires reboot to finish the operation."
                 }
             }
         }

@@ -3,16 +3,21 @@
         "actor": {
             "group": "primary"
         },
-        "connection_uid": {
+        "data": {
+            "description": "Additional data that is associated with the event.",
             "requirement": "optional",
-            "group": "context",
-            "caption": "Connection Identifier",
-            "description": "The network connection identifier.",
-            "type": "string_t",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
+        },
+        "count": {
+            "default": 1
+        },
+        "device": {
+            "group": "primary"
         },
         "confidence": {
             "group": "classification",
@@ -25,27 +30,15 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "device": {
-            "group": "primary"
-        },
-        "count": {
-            "default": 1
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
+        "connection_uid": {
             "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
+            "group": "context",
+            "caption": "Connection Identifier",
+            "description": "The network connection identifier.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
             }
         },
         "disposition_id": {
@@ -58,6 +51,13 @@
                 },
                 "10": {
                     "description": "Requires reboot to finish the operation."
+                }
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
                 }
             }
         }

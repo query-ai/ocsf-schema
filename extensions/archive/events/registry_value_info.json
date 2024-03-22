@@ -1,21 +1,21 @@
 {
     "attributes": {
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "command_uid": {
             "description": "The unique identifier of the discovery command that pertains to this event.",
             "group": "primary",
             "requirement": "required",
             "caption": "Command UID",
             "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -46,15 +46,15 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "reg_value": {
-            "type": "registry_value"
-        },
         "severity_id": {
             "enum": {
                 "0": {
                     "description": "The event severity is not known."
                 }
             }
+        },
+        "reg_value": {
+            "type": "registry_value"
         }
     }
 }

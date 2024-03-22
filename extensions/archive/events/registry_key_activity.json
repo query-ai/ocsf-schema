@@ -1,11 +1,11 @@
 {
     "attributes": {
-        "confidence": {
-            "group": "classification",
+        "reg_key_result": {
+            "group": "primary",
             "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
+            "caption": "Registry Key Result",
+            "description": "The result of the registry key change. It should contain the new values of the changed attributes.",
+            "type": "registry_key",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -24,12 +24,12 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "reg_key_result": {
-            "group": "primary",
+        "confidence": {
+            "group": "classification",
             "requirement": "optional",
-            "caption": "Registry Key Result",
-            "description": "The result of the registry key change. It should contain the new values of the changed attributes.",
-            "type": "registry_key",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -37,19 +37,16 @@
         },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
                 "15": {
                     "description": "Marked with extended attributes."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 },
                 "10": {
                     "description": "Requires reboot to finish the operation."
                 }
             }
-        },
-        "reg_key": {
-            "type": "registry_key"
         },
         "severity_id": {
             "enum": {
@@ -57,6 +54,9 @@
                     "description": "The event severity is not known."
                 }
             }
+        },
+        "reg_key": {
+            "type": "registry_key"
         }
     }
 }

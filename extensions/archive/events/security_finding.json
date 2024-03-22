@@ -10,6 +10,9 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "count": {
+            "default": 1
+        },
         "disposition": {
             "requirement": "optional",
             "caption": "Disposition",
@@ -84,26 +87,9 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
-        },
         "resources": {
             "description": "A list of resources associated to an event.",
             "type": "resource"
-        },
-        "confidence": {
-            "group": "classification",
-            "type": "integer_t"
-        },
-        "activity_id": {
-            "enum": {
-                "2": {
-                    "description": "A security finding is updated."
-                },
-                "1": {
-                    "description": "A security finding is generated."
-                }
-            }
         },
         "severity_id": {
             "enum": {
@@ -111,6 +97,10 @@
                     "description": "The event severity is not known."
                 }
             }
+        },
+        "confidence": {
+            "group": "classification",
+            "type": "integer_t"
         }
     }
 }

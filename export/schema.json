@@ -354,7 +354,7 @@
             },
             "1": {
               "caption": "Create",
-              "description": "A user account was created."
+              "description": "A user/role was created."
             },
             "10": {
               "caption": "MFA Factor Enable",
@@ -366,7 +366,7 @@
             },
             "2": {
               "caption": "Enable",
-              "description": "A user account was enabled."
+              "description": "A user/role was enabled."
             },
             "3": {
               "caption": "Password Change",
@@ -378,19 +378,19 @@
             },
             "5": {
               "caption": "Disable",
-              "description": "A user account was disabled."
+              "description": "A user/role was disabled."
             },
             "6": {
               "caption": "Delete",
-              "description": "A user account was deleted."
+              "description": "A user/role was deleted."
             },
             "7": {
               "caption": "Attach Policy",
-              "description": "A user account was changed."
+              "description": "An IAM Policy was attached to a user/role."
             },
             "8": {
               "caption": "Detach Policy",
-              "description": "A user account was locked out."
+              "description": "An IAM Policy was detached from a user/role."
             },
             "9": {
               "caption": "Lock",
@@ -7006,19 +7006,11 @@
             },
             "1": {
               "caption": "Query",
-              "description": "The DNS request was successfully resolved."
+              "description": "The DNS query request."
             },
             "2": {
               "caption": "Response",
-              "description": "The DNS request was unresolved."
-            },
-            "3": {
-              "caption": "Query",
-              "description": "The DNS query request."
-            },
-            "4": {
-              "caption": "Traffic",
-              "description": "Network traffic report."
+              "description": "The DNS query response."
             },
             "6": {
               "caption": "Traffic",
@@ -8513,7 +8505,7 @@
           "caption": "Class ID",
           "description": "The unique identifier of a class. A Class describes the attributes available in an event.",
           "enum": {
-            "4010": {
+            "4030": {
               "caption": "Email Delivery Activity",
               "description": "Email Delivery events report the delivery status of emails."
             }
@@ -8916,19 +8908,19 @@
           "caption": "Type ID",
           "description": "The event/finding type ID. It identifies the event's semantics and structure. The value is calculated by the logging system as: <code>class_uid * 100 + activity_id</code>.",
           "enum": {
-            "400999": {
+            "402999": {
               "caption": "Email Delivery Activity: Other"
             },
-            "401000": {
+            "403000": {
               "caption": "Email Delivery Activity: Unknown"
             },
-            "401001": {
+            "403001": {
               "caption": "Email Delivery Activity: Delivered"
             },
-            "401002": {
+            "403002": {
               "caption": "Email Delivery Activity: Failed"
             },
-            "401003": {
+            "403003": {
               "caption": "Email Delivery Activity: Temporary Failure"
             }
           },
@@ -8957,7 +8949,7 @@
         "host",
         "malware"
       ],
-      "uid": 10
+      "uid": 30
     },
     "email_file_activity": {
       "associations": {
@@ -12051,19 +12043,19 @@
             },
             "1": {
               "caption": "Put",
-              "description": "A new network connection was opened."
+              "description": "File upload to the FTP or SFTP site."
             },
             "2": {
               "caption": "Get",
-              "description": "The network connection was closed."
+              "description": "File download from the FTP or SFTP site."
             },
             "3": {
               "caption": "Poll",
-              "description": "The network connection was abnormally terminated or closed by a middle device like firewalls."
+              "description": "Poll directory for specific file(s) or folder(s) at the FTP or SFTP site location."
             },
             "4": {
               "caption": "Delete",
-              "description": "Network traffic report."
+              "description": "Delete file(s) from the FTP or SFTP site."
             },
             "5": {
               "caption": "Rename",
@@ -13151,19 +13143,19 @@
             },
             "1": {
               "caption": "Connect",
-              "description": "A new network connection was opened."
+              "description": "The CONNECT method establishes a tunnel to the server identified by the target resource."
             },
             "2": {
               "caption": "Delete",
-              "description": "The network connection was closed."
+              "description": "The DELETE method deletes the specified resource."
             },
             "3": {
               "caption": "Get",
-              "description": "The network connection was abnormally terminated or closed by a middle device like firewalls."
+              "description": "The GET method requests a representation of the specified resource. Requests using GET should only retrieve data."
             },
             "4": {
               "caption": "Head",
-              "description": "Network traffic report."
+              "description": "The HEAD method asks for a response identical to a GET request, but without the response body."
             },
             "5": {
               "caption": "Options",
@@ -18000,7 +17992,7 @@
             },
             "4": {
               "caption": "Fail",
-              "description": "Network traffic report."
+              "description": "The network connection failed. For example a connection timeout or no route to host."
             },
             "5": {
               "caption": "Refuse",
@@ -21519,19 +21511,19 @@
             },
             "1": {
               "caption": "Initial Request",
-              "description": "A new network connection was opened."
+              "description": "The initial RDP request."
             },
             "2": {
               "caption": "Initial Response",
-              "description": "The network connection was closed."
+              "description": "The initial RDP response."
             },
             "3": {
               "caption": "Connect Request",
-              "description": "The network connection was abnormally terminated or closed by a middle device like firewalls."
+              "description": "An RDP connection request."
             },
             "4": {
               "caption": "Connect Response",
-              "description": "Network traffic report."
+              "description": "An RDP connection response."
             },
             "5": {
               "caption": "TLS Handshake",
@@ -25762,11 +25754,11 @@
             },
             "1": {
               "caption": "Create",
-              "description": "A security finding is generated."
+              "description": "A security finding was created."
             },
             "2": {
               "caption": "Update",
-              "description": "A security finding is updated."
+              "description": "A security finding was updated."
             },
             "3": {
               "caption": "Close",
@@ -27238,7 +27230,7 @@
             },
             "4": {
               "caption": "Fail",
-              "description": "Network traffic report."
+              "description": "The network connection failed. For example a connection timeout or no route to host."
             },
             "5": {
               "caption": "Refuse",

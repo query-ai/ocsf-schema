@@ -1,16 +1,5 @@
 {
     "attributes": {
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "count": {
             "default": 1
         },
@@ -24,26 +13,15 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "activity_id": {
-            "enum": {
-                "5": {
-                    "description": "A user account was disabled."
-                },
-                "7": {
-                    "description": "A user account was changed."
-                },
-                "6": {
-                    "description": "A user account was deleted."
-                },
-                "1": {
-                    "description": "A user account was created."
-                },
-                "2": {
-                    "description": "A user account was enabled."
-                },
-                "8": {
-                    "description": "A user account was locked out."
-                }
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "severity_id": {

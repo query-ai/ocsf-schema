@@ -1,34 +1,5 @@
 {
     "attributes": {
-        "activity_id": {
-            "enum": {
-                "3": {
-                    "caption": "Query",
-                    "description": "The DNS query request."
-                },
-                "4": {
-                    "caption": "Traffic",
-                    "description": "Network traffic report."
-                },
-                "1": {
-                    "description": "The DNS request was successfully resolved."
-                },
-                "2": {
-                    "description": "The DNS request was unresolved."
-                }
-            }
-        },
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "data": {
             "description": "Additional data that is associated with the event.",
             "requirement": "optional",
@@ -42,11 +13,15 @@
         "count": {
             "default": 1
         },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
+        "confidence": {
+            "group": "classification",
+            "requirement": "optional",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
         "disposition_id": {
@@ -59,6 +34,13 @@
                 },
                 "14": {
                     "description": "No longer suspicious (re-scored)."
+                }
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
                 }
             }
         }

@@ -1,47 +1,153 @@
 {
     "attributes": {
-        "integrity_requirement_id": {
-            "description": "Name: Integrity Requirement (IR). Group: Environmental. CVSS version: v2, v3",
+        "modified_availability_id": {
+            "description": "Name: Modified Availability (MA). Group: Environmental. Version: v3",
             "enum": {
                 "0": {
-                    "caption": "Not Defined (X, ND)"
+                    "caption": "Not Defined (X)"
                 },
                 "1": {
-                    "caption": "Low (L)"
+                    "caption": "None (N)"
                 },
                 "2": {
-                    "caption": "Medium (LM)"
+                    "caption": "Low (L)"
                 },
                 "3": {
                     "caption": "High (H)"
                 }
             },
             "requirement": "optional",
-            "caption": "Integrity Requirement (IR)",
+            "caption": "Modified Availability (MA)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "attack_vector_id": {
-            "description": "Name: Attack Vector (AV). Group: Base. CVSS version: v3",
+        "raw_score": {
+            "description": "CVSS Score in the range of 0.0 to 10.0.",
+            "requirement": "recommended",
+            "caption": "Reputation Score",
+            "type": "float_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "collateral_damage_potential_id": {
+            "description": "Name: Collateral Damage Potential (CDP). Group: Environmental. CVSS version: v1, v2",
             "enum": {
                 "0": {
-                    "caption": "Network (N)"
+                    "caption": "None (N)"
                 },
                 "1": {
-                    "caption": "Adjacent (A)"
+                    "caption": "Low (L)"
                 },
                 "2": {
-                    "caption": "Local (L)"
+                    "caption": "Low-Medium (LM)"
                 },
                 "3": {
-                    "caption": "Physical (P)"
+                    "caption": "Medium-High (MH)"
+                },
+                "4": {
+                    "caption": "High (H)"
+                },
+                "5": {
+                    "caption": "Not Defined (ND)"
                 }
             },
             "requirement": "optional",
-            "caption": "Attack Vector (AV)",
+            "caption": "Collateral Damage Potential (CDP)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "exploitability_id": {
+            "description": "Name: Exploitability (E). Group: Temporal. CVSS version: v1, v2",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (ND)"
+                },
+                "1": {
+                    "caption": "High (H)"
+                },
+                "2": {
+                    "caption": "Functional (F)"
+                },
+                "3": {
+                    "caption": "Proof-of-Concept (POC)"
+                },
+                "4": {
+                    "caption": "Unproven (U)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Exploitability (E)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "confidentiality_impact_id": {
+            "description": "Name: Confidentiality Impact (C). Group: Base CVSS version: v1, v2",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Partial (P)"
+                },
+                "2": {
+                    "caption": "Complete (C)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Confidentiality Impact (C)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "modified_user_interaction_id": {
+            "description": "Name: Modified User Interaction (MUI). Group: Environmental. Version: v3",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (X)"
+                },
+                "1": {
+                    "caption": "None (N)"
+                },
+                "2": {
+                    "caption": "Required (R)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Modified User Interaction (MUI)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "modified_scope_id": {
+            "description": "Name: Modified Scope (MS). Group: Environmental. Version: v3",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (X)"
+                },
+                "1": {
+                    "caption": "Unchanged (U)"
+                },
+                "2": {
+                    "caption": "Changed (C)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Modified Scope (MS)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -69,45 +175,106 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "availability_impact_id": {
-            "description": "Name: Availability Impact (A). Group: Base, CVSS version: v1, v2",
+        "modified_attack_vector_id": {
+            "description": "Name: Modified Attack Vector (MAV). Group: Environmental. Version: v3",
             "enum": {
                 "0": {
-                    "caption": "None (N)"
+                    "caption": "Not Defined (X)"
                 },
                 "1": {
-                    "caption": "Partial (P)"
+                    "caption": "Network (N)"
                 },
                 "2": {
-                    "caption": "Complete (C)"
+                    "caption": "Adjacent (A)"
+                },
+                "3": {
+                    "caption": "Local (L)"
+                },
+                "4": {
+                    "caption": "Physical (P)"
                 }
             },
             "requirement": "optional",
-            "caption": "Availability Impact (A)",
+            "caption": "Modified Attack Vector (MAV)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "modified_confidentiality_id": {
-            "description": "Name: Modified Confidentiality (MC). Group: Environmental. Version: v3",
+        "availability_id": {
+            "description": "Name: Availability (A). Group: Base. CVSS version: v3",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Low (L)"
+                },
+                "2": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Availability (A)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "confidentiality_id": {
+            "caption": "Confidentiality (C)",
+            "description": "The Confidentiality Common Vulnerability Scoring System (CVSS) metric. Name: Confidentiality (C). Group: Base. CVSS version: v3",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Low (L)"
+                },
+                "2": {
+                    "caption": "High (H)"
+                },
+                "-1": {
+                    "caption": "Other"
+                },
+                "3": {
+                    "caption": "Secret"
+                },
+                "4": {
+                    "caption": "Top Secret"
+                }
+            },
+            "requirement": "optional",
+            "sibling": "confidentiality",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "exploit_code_maturity_id": {
+            "description": "Name: Exploit Code Maturity (E). Group: Temporal. CVSS version: v3",
             "enum": {
                 "0": {
                     "caption": "Not Defined (X)"
                 },
                 "1": {
-                    "caption": "None (N)"
+                    "caption": "High (H)"
                 },
                 "2": {
-                    "caption": "Low (L)"
+                    "caption": "Functional (F)"
                 },
                 "3": {
-                    "caption": "High (H)"
+                    "caption": "Proof-of-Concept (P)"
+                },
+                "4": {
+                    "caption": "Unproven (U)"
                 }
             },
             "requirement": "optional",
-            "caption": "Modified Confidentiality (MC)",
+            "caption": "Exploit Code Maturity (E)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -138,198 +305,48 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "modified_integrity_id": {
-            "description": "Name: Modified Integrity (MI). Group: Environmental. Version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Not Defined (X)"
-                },
-                "1": {
-                    "caption": "None (N)"
-                },
-                "2": {
-                    "caption": "Low (L)"
-                },
-                "3": {
-                    "caption": "High (H)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Modified Integrity (MI)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "privileges_required_id": {
-            "caption": "Privileges Required (PR)",
-            "description": "The Privileges Required (PR) Common Vulnerability Scoring System (CVSS) metric. Name: Privileges Required (PR). Group: Base. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Low (L)"
-                },
-                "2": {
-                    "caption": "High (H)"
-                }
-            },
-            "requirement": "optional",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "authentication_id": {
-            "description": "Name: Authentication (Au). Group: Base. CVSS version: v1, v2",
-            "enum": {
-                "0": {
-                    "caption": "None"
-                },
-                "1": {
-                    "caption": "Single (S)"
-                },
-                "2": {
-                    "caption": "Multiple (M)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Authentication (Au)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "integrity_impact_id": {
-            "description": "Name: Integrity Impact (I). Group: Base. CVSS version: v1, v2",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Partial (P)"
-                },
-                "2": {
-                    "caption": "Complete (C)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Integrity Impact (I)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "confidentiality_impact_id": {
-            "description": "Name: Confidentiality Impact (C). Group: Base CVSS version: v1, v2",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Partial (P)"
-                },
-                "2": {
-                    "caption": "Complete (C)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Confidentiality Impact (C)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "depth_id": {
-            "description": "The CVSS depth. Representing a depth of the equation used to calculate CVSS score.",
-            "enum": {
-                "0": {
-                    "caption": "Base"
-                },
-                "1": {
-                    "caption": "Temporal"
-                },
-                "2": {
-                    "caption": "Environmental"
-                }
-            },
-            "requirement": "recommended",
-            "caption": "CVSS Depth",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "modified_user_interaction_id": {
-            "description": "Name: Modified User Interaction (MUI). Group: Environmental. Version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Not Defined (X)"
-                },
-                "1": {
-                    "caption": "None (N)"
-                },
-                "2": {
-                    "caption": "Required (R)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Modified User Interaction (MUI)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "attack_complexity_id": {
-            "caption": "Attack Complexity (AC)",
-            "description": "The Attack Complexity Common Vulnerability Scoring System (CVSS) metric. Name: Attack Complexity (AC). Group: Base. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Low (L)"
-                },
-                "1": {
-                    "caption": "High (H)"
-                }
-            },
-            "requirement": "optional",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "report_confidence_id": {
-            "description": "Name: Report Confidence (RC). Group: Temporal. CVSS version: v1, v2, v3",
+        "integrity_requirement_id": {
+            "description": "Name: Integrity Requirement (IR). Group: Environmental. CVSS version: v2, v3",
             "enum": {
                 "0": {
                     "caption": "Not Defined (X, ND)"
                 },
                 "1": {
-                    "caption": "Confirmed (C)"
+                    "caption": "Low (L)"
                 },
                 "2": {
-                    "caption": "Reasonable (R)"
+                    "caption": "Medium (LM)"
                 },
                 "3": {
-                    "caption": "Unconfirmed (UC)"
-                },
-                "4": {
-                    "caption": "Uncorroborated (UR)"
-                },
-                "5": {
-                    "caption": "Unknown (U)"
+                    "caption": "High (H)"
                 }
             },
             "requirement": "optional",
-            "caption": "Report Confidence (RC)",
+            "caption": "Integrity Requirement (IR)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "confidentiality_requirement_id": {
+            "description": "Name: Confidentiality Requirement (CR). Group: Environmental. CVSS version: v2, v3",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (X, ND)"
+                },
+                "1": {
+                    "caption": "Low (L)"
+                },
+                "2": {
+                    "caption": "Medium (LM)"
+                },
+                "3": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Confidentiality Requirement (CR)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -381,93 +398,24 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "target_distribution_id": {
-            "description": "Name: Target Distribution (TD). Group: Environmental. CVSS version: v1, v2",
+        "attack_vector_id": {
+            "description": "Name: Attack Vector (AV). Group: Base. CVSS version: v3",
             "enum": {
                 "0": {
-                    "caption": "None (N)"
+                    "caption": "Network (N)"
                 },
                 "1": {
-                    "caption": "Low (L)"
+                    "caption": "Adjacent (A)"
                 },
                 "2": {
-                    "caption": "Medium (LM)"
+                    "caption": "Local (L)"
                 },
                 "3": {
-                    "caption": "High (H)"
-                },
-                "4": {
-                    "caption": "Not Defined (ND)"
+                    "caption": "Physical (P)"
                 }
             },
             "requirement": "optional",
-            "caption": "Target Distribution (TD)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "exploit_code_maturity_id": {
-            "description": "Name: Exploit Code Maturity (E). Group: Temporal. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Not Defined (X)"
-                },
-                "1": {
-                    "caption": "High (H)"
-                },
-                "2": {
-                    "caption": "Functional (F)"
-                },
-                "3": {
-                    "caption": "Proof-of-Concept (P)"
-                },
-                "4": {
-                    "caption": "Unproven (U)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Exploit Code Maturity (E)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "modified_scope_id": {
-            "description": "Name: Modified Scope (MS). Group: Environmental. Version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Not Defined (X)"
-                },
-                "1": {
-                    "caption": "Unchanged (U)"
-                },
-                "2": {
-                    "caption": "Changed (C)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Modified Scope (MS)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "scope_id": {
-            "description": "Name: Scope (S). Group: Base. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Unchanged (U)"
-                },
-                "1": {
-                    "caption": "Changed (C)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Scope (S)",
+            "caption": "Attack Vector (AV)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -489,6 +437,141 @@
             },
             "requirement": "optional",
             "caption": "Access Vector (AV)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "integrity_id": {
+            "description": "The Integrity Common Vulnerability Scoring System (CVSS) metric. Name: Integrity (I). Group: Base. CVSS version: v3",
+            "caption": "Integrity (I)",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Low (L)"
+                },
+                "2": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "authentication_id": {
+            "description": "Name: Authentication (Au). Group: Base. CVSS version: v1, v2",
+            "enum": {
+                "0": {
+                    "caption": "None"
+                },
+                "1": {
+                    "caption": "Single (S)"
+                },
+                "2": {
+                    "caption": "Multiple (M)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Authentication (Au)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "modified_confidentiality_id": {
+            "description": "Name: Modified Confidentiality (MC). Group: Environmental. Version: v3",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (X)"
+                },
+                "1": {
+                    "caption": "None (N)"
+                },
+                "2": {
+                    "caption": "Low (L)"
+                },
+                "3": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Modified Confidentiality (MC)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "report_confidence_id": {
+            "description": "Name: Report Confidence (RC). Group: Temporal. CVSS version: v1, v2, v3",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (X, ND)"
+                },
+                "1": {
+                    "caption": "Confirmed (C)"
+                },
+                "2": {
+                    "caption": "Reasonable (R)"
+                },
+                "3": {
+                    "caption": "Unconfirmed (UC)"
+                },
+                "4": {
+                    "caption": "Uncorroborated (UR)"
+                },
+                "5": {
+                    "caption": "Unknown (U)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Report Confidence (RC)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "attack_complexity_id": {
+            "caption": "Attack Complexity (AC)",
+            "description": "The Attack Complexity Common Vulnerability Scoring System (CVSS) metric. Name: Attack Complexity (AC). Group: Base. CVSS version: v3",
+            "enum": {
+                "0": {
+                    "caption": "Low (L)"
+                },
+                "1": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "availability_impact_id": {
+            "description": "Name: Availability Impact (A). Group: Base, CVSS version: v1, v2",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Partial (P)"
+                },
+                "2": {
+                    "caption": "Complete (C)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Availability Impact (A)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -522,179 +605,42 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "modified_availability_id": {
-            "description": "Name: Modified Availability (MA). Group: Environmental. Version: v3",
+        "depth_id": {
+            "description": "The CVSS depth. Representing a depth of the equation used to calculate CVSS score.",
             "enum": {
                 "0": {
-                    "caption": "Not Defined (X)"
+                    "caption": "Base"
                 },
                 "1": {
-                    "caption": "None (N)"
+                    "caption": "Temporal"
                 },
                 "2": {
-                    "caption": "Low (L)"
-                },
-                "3": {
-                    "caption": "High (H)"
+                    "caption": "Environmental"
                 }
             },
-            "requirement": "optional",
-            "caption": "Modified Availability (MA)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "confidentiality_id": {
-            "caption": "Confidentiality (C)",
-            "description": "The Confidentiality Common Vulnerability Scoring System (CVSS) metric. Name: Confidentiality (C). Group: Base. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Low (L)"
-                },
-                "2": {
-                    "caption": "High (H)"
-                },
-                "-1": {
-                    "caption": "Other"
-                },
-                "3": {
-                    "caption": "Secret"
-                },
-                "4": {
-                    "caption": "Top Secret"
-                }
-            },
-            "requirement": "optional",
-            "sibling": "confidentiality",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "exploitability_id": {
-            "description": "Name: Exploitability (E). Group: Temporal. CVSS version: v1, v2",
-            "enum": {
-                "0": {
-                    "caption": "Not Defined (ND)"
-                },
-                "1": {
-                    "caption": "High (H)"
-                },
-                "2": {
-                    "caption": "Functional (F)"
-                },
-                "3": {
-                    "caption": "Proof-of-Concept (POC)"
-                },
-                "4": {
-                    "caption": "Unproven (U)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Exploitability (E)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "availability_id": {
-            "description": "Name: Availability (A). Group: Base. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Low (L)"
-                },
-                "2": {
-                    "caption": "High (H)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Availability (A)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "raw_score": {
-            "description": "CVSS Score in the range of 0.0 to 10.0.",
             "requirement": "recommended",
-            "caption": "Reputation Score",
-            "type": "float_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "user_interaction_id": {
-            "caption": "User Interaction (UI)",
-            "description": "The User Interaction Common Vulnerability Scoring System (CVSS) metric. Name: User Interaction (UI). Group: Base. CVSS version: v3",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Required (R)"
-                }
-            },
-            "requirement": "optional",
+            "caption": "CVSS Depth",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "confidentiality_requirement_id": {
-            "description": "Name: Confidentiality Requirement (CR). Group: Environmental. CVSS version: v2, v3",
+        "integrity_impact_id": {
+            "description": "Name: Integrity Impact (I). Group: Base. CVSS version: v1, v2",
             "enum": {
                 "0": {
-                    "caption": "Not Defined (X, ND)"
-                },
-                "1": {
-                    "caption": "Low (L)"
-                },
-                "2": {
-                    "caption": "Medium (LM)"
-                },
-                "3": {
-                    "caption": "High (H)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Confidentiality Requirement (CR)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "modified_privileges_required_id": {
-            "description": "Name: Modified Privileges Required (MPR). Group: Environmental. Version: v3",
-            "enum": {
-                "0": {
-                    "caption": "Not Defined (X)"
-                },
-                "1": {
                     "caption": "None (N)"
                 },
-                "2": {
-                    "caption": "Low (L)"
+                "1": {
+                    "caption": "Partial (P)"
                 },
-                "3": {
-                    "caption": "High (H)"
+                "2": {
+                    "caption": "Complete (C)"
                 }
             },
             "requirement": "optional",
-            "caption": "Modified Privileges Required (MPR)",
+            "caption": "Integrity Impact (I)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -722,78 +668,132 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "collateral_damage_potential_id": {
-            "description": "Name: Collateral Damage Potential (CDP). Group: Environmental. CVSS version: v1, v2",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Low (L)"
-                },
-                "2": {
-                    "caption": "Low-Medium (LM)"
-                },
-                "3": {
-                    "caption": "Medium-High (MH)"
-                },
-                "4": {
-                    "caption": "High (H)"
-                },
-                "5": {
-                    "caption": "Not Defined (ND)"
-                }
-            },
-            "requirement": "optional",
-            "caption": "Collateral Damage Potential (CDP)",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "integrity_id": {
-            "description": "The Integrity Common Vulnerability Scoring System (CVSS) metric. Name: Integrity (I). Group: Base. CVSS version: v3",
-            "caption": "Integrity (I)",
-            "enum": {
-                "0": {
-                    "caption": "None (N)"
-                },
-                "1": {
-                    "caption": "Low (L)"
-                },
-                "2": {
-                    "caption": "High (H)"
-                }
-            },
-            "requirement": "optional",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "modified_attack_vector_id": {
-            "description": "Name: Modified Attack Vector (MAV). Group: Environmental. Version: v3",
+        "modified_integrity_id": {
+            "description": "Name: Modified Integrity (MI). Group: Environmental. Version: v3",
             "enum": {
                 "0": {
                     "caption": "Not Defined (X)"
                 },
                 "1": {
-                    "caption": "Network (N)"
+                    "caption": "None (N)"
                 },
                 "2": {
-                    "caption": "Adjacent (A)"
+                    "caption": "Low (L)"
                 },
                 "3": {
-                    "caption": "Local (L)"
-                },
-                "4": {
-                    "caption": "Physical (P)"
+                    "caption": "High (H)"
                 }
             },
             "requirement": "optional",
-            "caption": "Modified Attack Vector (MAV)",
+            "caption": "Modified Integrity (MI)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "privileges_required_id": {
+            "caption": "Privileges Required (PR)",
+            "description": "The Privileges Required (PR) Common Vulnerability Scoring System (CVSS) metric. Name: Privileges Required (PR). Group: Base. CVSS version: v3",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Low (L)"
+                },
+                "2": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "user_interaction_id": {
+            "caption": "User Interaction (UI)",
+            "description": "The User Interaction Common Vulnerability Scoring System (CVSS) metric. Name: User Interaction (UI). Group: Base. CVSS version: v3",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Required (R)"
+                }
+            },
+            "requirement": "optional",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "scope_id": {
+            "description": "Name: Scope (S). Group: Base. CVSS version: v3",
+            "enum": {
+                "0": {
+                    "caption": "Unchanged (U)"
+                },
+                "1": {
+                    "caption": "Changed (C)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Scope (S)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "target_distribution_id": {
+            "description": "Name: Target Distribution (TD). Group: Environmental. CVSS version: v1, v2",
+            "enum": {
+                "0": {
+                    "caption": "None (N)"
+                },
+                "1": {
+                    "caption": "Low (L)"
+                },
+                "2": {
+                    "caption": "Medium (LM)"
+                },
+                "3": {
+                    "caption": "High (H)"
+                },
+                "4": {
+                    "caption": "Not Defined (ND)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Target Distribution (TD)",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "modified_privileges_required_id": {
+            "description": "Name: Modified Privileges Required (MPR). Group: Environmental. Version: v3",
+            "enum": {
+                "0": {
+                    "caption": "Not Defined (X)"
+                },
+                "1": {
+                    "caption": "None (N)"
+                },
+                "2": {
+                    "caption": "Low (L)"
+                },
+                "3": {
+                    "caption": "High (H)"
+                }
+            },
+            "requirement": "optional",
+            "caption": "Modified Privileges Required (MPR)",
             "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",

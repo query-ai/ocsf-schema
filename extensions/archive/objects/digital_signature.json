@@ -1,5 +1,16 @@
 {
     "attributes": {
+        "fingerprints": {
+            "requirement": "optional",
+            "caption": "Fingerprints",
+            "description": "An array of digital fingerprint objects.",
+            "is_array": true,
+            "type": "fingerprint",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "company_name": {
             "requirement": "required",
             "caption": "Company Name",
@@ -25,17 +36,6 @@
             "requirement": "optional",
             "caption": "Serial Number",
             "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "fingerprints": {
-            "requirement": "optional",
-            "caption": "Fingerprints",
-            "description": "An array of digital fingerprint objects.",
-            "is_array": true,
-            "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"

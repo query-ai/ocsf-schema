@@ -1,5 +1,18 @@
 {
     "attributes": {
+        "actor": {
+            "requirement": "optional",
+            "caption": "Actor",
+            "description": "The actor that performed the operation or the action.",
+            "type": "actor",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "count": {
+            "default": 1
+        },
         "device": {
             "requirement": "recommended",
             "caption": "Device",
@@ -20,19 +33,6 @@
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
-        },
-        "actor": {
-            "requirement": "optional",
-            "caption": "Actor",
-            "description": "The actor that performed the operation or the action.",
-            "type": "actor",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "count": {
-            "default": 1
         },
         "data": {
             "description": "Additional data that is associated with the event.",
