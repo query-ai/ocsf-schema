@@ -10,9 +10,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
-        },
         "disposition": {
             "requirement": "optional",
             "caption": "Disposition",
@@ -87,6 +84,9 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "count": {
+            "default": 1
+        },
         "resources": {
             "description": "A list of resources associated to an event.",
             "type": "resource"
@@ -99,8 +99,8 @@
             }
         },
         "confidence": {
-            "group": "classification",
-            "type": "integer_t"
+            "type": "integer_t",
+            "group": "classification"
         }
     }
 }

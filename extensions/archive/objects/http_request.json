@@ -1,11 +1,4 @@
 {
-    "constraints": {
-        "at_least_one": [
-            "user_agent",
-            "url",
-            "hostname"
-        ]
-    },
     "attributes": {
         "prefix": {
             "description": "Domain prefix.",
@@ -20,5 +13,12 @@
         "http_method": {
             "requirement": "recommended"
         }
+    },
+    "constraints": {
+        "at_least_one": [
+            "user_agent",
+            "url",
+            "hostname"
+        ]
     }
 }
