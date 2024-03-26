@@ -1,10 +1,24 @@
 {
     "attributes": {
-        "scan_uid": {
-            "description": "The unique identifier of the discovery scan request that pertains to this event.",
-            "group": "primary",
+        "confidence": {
+            "group": "classification",
             "requirement": "optional",
-            "caption": "Scan UID",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "count": {
+            "default": 1
+        },
+        "command_uid": {
+            "description": "The unique identifier of the discovery command that pertains to this event.",
+            "group": "primary",
+            "requirement": "required",
+            "caption": "Command UID",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
@@ -21,25 +35,11 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
-        },
-        "confidence": {
-            "group": "classification",
-            "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "command_uid": {
-            "description": "The unique identifier of the discovery command that pertains to this event.",
+        "scan_uid": {
+            "description": "The unique identifier of the discovery scan request that pertains to this event.",
             "group": "primary",
-            "requirement": "required",
-            "caption": "Command UID",
+            "requirement": "optional",
+            "caption": "Scan UID",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",

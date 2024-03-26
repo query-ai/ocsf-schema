@@ -10,9 +10,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
-        },
         "confidence": {
             "group": "classification",
             "requirement": "optional",
@@ -24,15 +21,18 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "count": {
+            "default": 1
+        },
+        "is_cleartext": {
+            "group": "primary"
+        },
         "severity_id": {
             "enum": {
                 "0": {
                     "description": "The event severity is not known."
                 }
             }
-        },
-        "is_cleartext": {
-            "group": "primary"
         }
     }
 }

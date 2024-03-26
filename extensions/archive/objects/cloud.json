@@ -1,5 +1,35 @@
 {
     "attributes": {
+        "account_uid": {
+            "requirement": "recommended",
+            "caption": "Account UID",
+            "description": "The unique identifier of the account(e.g. AWS Account ID).",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "org_uid": {
+            "requirement": "optional",
+            "caption": "Org ID",
+            "description": "The unique identifier of the organization to which the user belongs. For example, Active Directory or AWS Org ID.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "account_type": {
+            "requirement": "optional",
+            "caption": "Account Type",
+            "description": "The user account type, as defined by the event source.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
         "account_type_id": {
             "requirement": "optional",
             "caption": "Account Type ID",
@@ -31,36 +61,6 @@
             },
             "sibling": "account_type",
             "type": "integer_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "org_uid": {
-            "requirement": "optional",
-            "caption": "Org ID",
-            "description": "The unique identifier of the organization to which the user belongs. For example, Active Directory or AWS Org ID.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "account_uid": {
-            "requirement": "recommended",
-            "caption": "Account UID",
-            "description": "The unique identifier of the account(e.g. AWS Account ID).",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "account_type": {
-            "requirement": "optional",
-            "caption": "Account Type",
-            "description": "The user account type, as defined by the event source.",
-            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
