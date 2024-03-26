@@ -1,14 +1,7 @@
 {
     "attributes": {
-        "reputation": {
-            "requirement": "optional",
-            "caption": "Reputation Scores",
-            "description": "Contains the original and normalized reputation scores.",
-            "type": "reputation",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+        "type_id": {
+            "default": 0
         },
         "org_unit": {
             "requirement": "optional",
@@ -20,8 +13,15 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "type_id": {
-            "default": 0
+        "reputation": {
+            "requirement": "optional",
+            "caption": "Reputation Scores",
+            "description": "Contains the original and normalized reputation scores.",
+            "type": "reputation",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
         }
     }
 }

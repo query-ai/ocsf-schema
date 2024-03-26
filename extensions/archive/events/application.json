@@ -1,10 +1,10 @@
 {
     "attributes": {
-        "actor": {
+        "data": {
+            "description": "Additional data that is associated with the event.",
             "requirement": "optional",
-            "caption": "Actor",
-            "description": "The actor that performed the operation or the action.",
-            "type": "actor",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -21,11 +21,14 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "data": {
-            "description": "Additional data that is associated with the event.",
+        "count": {
+            "default": 1
+        },
+        "actor": {
             "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
+            "caption": "Actor",
+            "description": "The actor that performed the operation or the action.",
+            "type": "actor",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -40,9 +43,6 @@
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
-        },
-        "count": {
-            "default": 1
         },
         "severity_id": {
             "enum": {

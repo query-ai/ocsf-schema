@@ -24,15 +24,15 @@
         "count": {
             "default": 1
         },
+        "is_cleartext": {
+            "group": "primary"
+        },
         "severity_id": {
             "enum": {
                 "0": {
                     "description": "The event severity is not known."
                 }
             }
-        },
-        "is_cleartext": {
-            "group": "primary"
         }
     }
 }

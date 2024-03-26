@@ -3,6 +3,10 @@
         "type_id": {
             "default": 0
         },
+        "name": {
+            "name": "file_name_t",
+            "type": "string_t"
+        },
         "fingerprints": {
             "requirement": "recommended",
             "caption": "Fingerprints",
@@ -14,27 +18,23 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "name": {
-            "name": "file_name_t",
+        "modifier": {
+            "type": "string_t"
+        },
+        "owner": {
             "type": "string_t"
         },
         "parent_folder": {
             "type": "path_t"
         },
-        "path": {
-            "type": "path_t"
-        },
-        "owner": {
+        "accessor": {
             "type": "string_t"
         },
         "creator": {
             "type": "string_t"
         },
-        "accessor": {
-            "type": "string_t"
-        },
-        "modifier": {
-            "type": "string_t"
+        "path": {
+            "type": "path_t"
         }
     }
 }

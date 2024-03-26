@@ -20,9 +20,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "subject": {
-            "requirement": "required"
-        },
         "direction_id": {
             "description": "The direction of the email relative to the scanning host or organization.</p>Email scanned at an internet gateway might be characterized as inbound to the organization from the Internet, outbound from the organization to the Internet, or internal within the organization. Email scanned at a workstation might be characterized as inbound to, or outbound from the workstation.",
             "enum": {
@@ -54,6 +51,9 @@
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
+        },
+        "subject": {
+            "requirement": "required"
         }
     }
 }
