@@ -1,31 +1,21 @@
 {
-    "associations": {
-        "device": [
-            "actor.user"
-        ],
-        "actor.user": [
-            "device"
-        ]
-    },
     "attributes": {
-        "device": {
-            "group": "primary"
-        },
-        "actor": {
-            "group": "primary"
-        },
-        "data": {
-            "description": "Additional data that is associated with the event.",
+        "confidence": {
+            "group": "classification",
             "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
+            "caption": "Confidence",
+            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
+            "type": "integer_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
+        "device": {
+            "group": "primary"
+        },
+        "actor": {
+            "group": "primary"
         },
         "connection_uid": {
             "requirement": "optional",
@@ -38,15 +28,24 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "confidence": {
-            "group": "classification",
+        "count": {
+            "default": 1
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
             "requirement": "optional",
-            "caption": "Confidence",
-            "description": "The confidence of the reported event severity as a percentage: 0%-100%.",
-            "type": "integer_t",
+            "caption": "Data",
+            "type": "json_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "severity_id": {
+            "enum": {
+                "0": {
+                    "description": "The event severity is not known."
+                }
             }
         },
         "disposition_id": {
@@ -61,13 +60,14 @@
                     "description": "No longer suspicious (re-scored)."
                 }
             }
-        },
-        "severity_id": {
-            "enum": {
-                "0": {
-                    "description": "The event severity is not known."
-                }
-            }
         }
+    },
+    "associations": {
+        "device": [
+            "actor.user"
+        ],
+        "actor.user": [
+            "device"
+        ]
     }
 }

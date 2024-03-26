@@ -1,8 +1,5 @@
 {
     "attributes": {
-        "actor": {
-            "group": "primary"
-        },
         "data": {
             "description": "Additional data that is associated with the event.",
             "requirement": "optional",
@@ -12,9 +9,6 @@
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
-        },
-        "device": {
-            "group": "primary"
         },
         "connection_uid": {
             "requirement": "optional",
@@ -27,6 +21,15 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
+        "actor": {
+            "group": "primary"
+        },
+        "device": {
+            "group": "primary"
+        },
+        "count": {
+            "default": 1
+        },
         "confidence": {
             "group": "classification",
             "requirement": "optional",
@@ -38,19 +41,16 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
-        },
         "disposition_id": {
             "enum": {
-                "14": {
-                    "description": "No longer suspicious (re-scored)."
-                },
                 "15": {
                     "description": "Marked with extended attributes."
                 },
                 "10": {
                     "description": "Requires reboot to finish the operation."
+                },
+                "14": {
+                    "description": "No longer suspicious (re-scored)."
                 }
             }
         },

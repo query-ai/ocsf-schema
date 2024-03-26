@@ -10,17 +10,6 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "fingerprints": {
-            "requirement": "optional",
-            "caption": "Fingerprints",
-            "description": "An array of digital fingerprint objects.",
-            "is_array": true,
-            "type": "fingerprint",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
         "serial_number": {
             "description": "The serial number of the digital signature.",
             "requirement": "optional",
@@ -36,6 +25,17 @@
             "caption": "Company Name",
             "description": "The name of the company that published the file. For example: <code>Microsoft Corporation</code>.",
             "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "fingerprints": {
+            "requirement": "optional",
+            "caption": "Fingerprints",
+            "description": "An array of digital fingerprint objects.",
+            "is_array": true,
+            "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"

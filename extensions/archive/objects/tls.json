@@ -1,10 +1,10 @@
 {
     "attributes": {
-        "ja3s_string": {
+        "ja3_fingerprint": {
             "requirement": "recommended",
-            "caption": "JAS3 String",
-            "description": "The JAS3 string.",
-            "type": "string_t",
+            "caption": "JA3 Fingerprint",
+            "description": "The fingerprint of JA3 string.",
+            "type": "fingerprint",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
@@ -20,21 +20,21 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "ja3_string": {
+        "ja3s_string": {
             "requirement": "recommended",
-            "caption": "JA3 String",
-            "description": "The JA3 string.",
+            "caption": "JAS3 String",
+            "description": "The JAS3 string.",
             "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "ja3_fingerprint": {
+        "ja3_string": {
             "requirement": "recommended",
-            "caption": "JA3 Fingerprint",
-            "description": "The fingerprint of JA3 string.",
-            "type": "fingerprint",
+            "caption": "JA3 String",
+            "description": "The JA3 string.",
+            "type": "string_t",
             "@deprecated": {
                 "since": "1.1.0",
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"

@@ -1,9 +1,6 @@
 {
     "attributes": {
-        "packets": {
-            "default": 0
-        },
-        "packets_out": {
+        "packets_in": {
             "default": 0
         },
         "bytes_out": {
@@ -12,10 +9,13 @@
         "bytes": {
             "default": 0
         },
+        "packets": {
+            "default": 0
+        },
         "bytes_in": {
             "default": 0
         },
-        "packets_in": {
+        "packets_out": {
             "default": 0
         }
     }

@@ -1,24 +1,7 @@
 {
     "attributes": {
-        "data": {
-            "description": "Additional data that is associated with the event.",
-            "requirement": "optional",
-            "caption": "Data",
-            "type": "json_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
-        },
-        "disposition": {
-            "requirement": "optional",
-            "caption": "Disposition",
-            "description": "The event disposition name, as defined by the disposition_id.",
-            "type": "string_t",
-            "@deprecated": {
-                "since": "1.1.0",
-                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
-            }
+        "count": {
+            "default": 1
         },
         "disposition_id": {
             "requirement": "required",
@@ -84,12 +67,33 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "count": {
-            "default": 1
+        "disposition": {
+            "requirement": "optional",
+            "caption": "Disposition",
+            "description": "The event disposition name, as defined by the disposition_id.",
+            "type": "string_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
+        },
+        "data": {
+            "description": "Additional data that is associated with the event.",
+            "requirement": "optional",
+            "caption": "Data",
+            "type": "json_t",
+            "@deprecated": {
+                "since": "1.1.0",
+                "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
+            }
         },
         "resources": {
-            "description": "A list of resources associated to an event.",
-            "type": "resource"
+            "type": "resource",
+            "description": "A list of resources associated to an event."
+        },
+        "confidence": {
+            "group": "classification",
+            "type": "integer_t"
         },
         "severity_id": {
             "enum": {
@@ -97,10 +101,6 @@
                     "description": "The event severity is not known."
                 }
             }
-        },
-        "confidence": {
-            "type": "integer_t",
-            "group": "classification"
         }
     }
 }

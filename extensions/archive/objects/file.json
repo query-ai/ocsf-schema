@@ -1,7 +1,8 @@
 {
     "attributes": {
-        "type_id": {
-            "default": 0
+        "name": {
+            "name": "file_name_t",
+            "type": "string_t"
         },
         "fingerprints": {
             "requirement": "recommended",
@@ -14,21 +15,20 @@
                 "message": "Deprecated in upgrade from ocsf-0.31.1 to qdm-1.1.0"
             }
         },
-        "name": {
-            "name": "file_name_t",
-            "type": "string_t"
-        },
-        "parent_folder": {
-            "type": "path_t"
-        },
-        "path": {
-            "type": "path_t"
+        "type_id": {
+            "default": 0
         },
         "owner": {
             "type": "string_t"
         },
         "creator": {
             "type": "string_t"
+        },
+        "path": {
+            "type": "path_t"
+        },
+        "parent_folder": {
+            "type": "path_t"
         },
         "accessor": {
             "type": "string_t"
