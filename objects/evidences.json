@@ -56,6 +56,10 @@
       "description": "Describes details about the DNS query associated to the activity that triggered the detection.",
       "requirement": "recommended"
     },
+    "resource_details": {
+      "description": "Describes details about the cloud resource(s) that triggered the detection.",
+      "requirement": "recommended"
+    },
     "src_endpoint": {
       "description": "Describes details about the source of the network activity that triggered the detection.",
       "requirement": "recommended"
