@@ -1,0 +1,12 @@
+{
+    "caption": "Evidence Artifacts",
+    "description": "A collection of evidence artifacts associated to the activity/activities that triggered a security detection.",
+    "extends": [null, "evidences"],
+    "name": "evidences",
+    "attributes": {
+      "resource_details": {
+        "description": "Describes details about the cloud resource(s) that was the source of the activity that triggered the detection.",
+        "requirement": "recommended"
+      }
+    }
+}
