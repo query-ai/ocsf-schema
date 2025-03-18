@@ -71103,12 +71103,6 @@
           "requirement": "recommended",
           "type": "job"
         },
-        "name": {
-          "caption": "Name",
-          "description": "The naming convention or type identifier of the evidence associated with the security detection. For example, the <code>@odata.type</code> from Microsoft Graph Alerts V2 or <code>display_name</code> from CrowdStrike Falcon Incident Behaviors.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
         "process": {
           "caption": "Process",
           "description": "Describes details about the process associated to the activity that triggered the detection.",
@@ -71175,12 +71169,6 @@
           "requirement": "recommended",
           "type": "tls"
         },
-        "uid": {
-          "caption": "Unique ID",
-          "description": "The unique identifier of the evidence associated with the security detection. For example, the <code>activity_id</code> from CrowdStrike Falcon Alerts or <code>behavior_id</code> from CrowdStrike Falcon Incident Behaviors.",
-          "requirement": "optional",
-          "type": "string_t"
-        },
         "unmapped": {
           "caption": "Unmapped Data",
           "description": "The attributes that are not mapped to the event schema. The names and values of those attributes are specific to the event source.",
@@ -71201,69 +71189,6 @@
           "observable": 21,
           "requirement": "recommended",
           "type": "user"
-        },
-        "verdict": {
-          "caption": "Verdict",
-          "description": "The normalized verdict of the evidence associated with the security detection. ",
-          "requirement": "optional",
-          "type": "string_t"
-        },
-        "verdict_id": {
-          "caption": "Verdict ID",
-          "description": "The normalized verdict (or status) ID of the evidence associated with the security detection. For example, Microsoft Graph Security Alerts contain a <code>verdict</code> enumeration for each type of <code>evidence</code> associated with the Alert. This is typically set by an automated investigation process or an analyst/investigator assigned to the finding.",
-          "enum": {
-            "0": {
-              "caption": "Unknown",
-              "description": "The type is unknown."
-            },
-            "1": {
-              "caption": "False Positive",
-              "description": "The verdict for the evidence has been identified as a False Positive."
-            },
-            "10": {
-              "caption": "Duplicate",
-              "description": "This evidence duplicates existing evidence related to this finding."
-            },
-            "2": {
-              "caption": "True Positive",
-              "description": "The verdict for the evidence has been identified as a True Positive."
-            },
-            "3": {
-              "caption": "Disregard",
-              "description": "The verdict for the evidence is that is should be Disregarded."
-            },
-            "4": {
-              "caption": "Suspicious",
-              "description": "The verdict for the evidence is that the behavior has been identified as Suspicious."
-            },
-            "5": {
-              "caption": "Benign",
-              "description": "The verdict for the evidence is that the behavior has been identified as Benign."
-            },
-            "6": {
-              "caption": "Test",
-              "description": "The evidence is part of a Test, or other sanctioned behavior(s)."
-            },
-            "7": {
-              "caption": "Insufficient Data",
-              "description": "There is insufficient data to render a verdict on the evidence."
-            },
-            "8": {
-              "caption": "Security Risk",
-              "description": "The verdict for the evidence is that the behavior has been identified as a Security Risk."
-            },
-            "9": {
-              "caption": "Managed Externally",
-              "description": "The verdict for the evidence is Managed Externally, such as in a case management tool."
-            },
-            "99": {
-              "caption": "Other",
-              "description": "The type is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
-            }
-          },
-          "requirement": "optional",
-          "sibling": "type",
-          "type": "integer_t"
         },
         "win_service": {
           "caption": "Windows Service",
