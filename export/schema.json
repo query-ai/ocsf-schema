@@ -158813,7 +158813,7 @@
             "name": "query",
             "uid": 101,
             "caption": "Query Extension",
-            "version": "1.6.0",
+            "version": "1.6.3",
             "description": "The Query extension adds Query's enhancements to the OCSF.",
             "@deprecated": null
         }
