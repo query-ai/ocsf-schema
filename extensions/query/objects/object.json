@@ -9,6 +9,10 @@
       "group": "primary",
       "requirement": "required"
     },
-	"unmapped": { } 
+    "connection_id": {
+      "group": "context",
+      "requirement": "optional"
+    },
+	"unmapped": { }
   }
 }

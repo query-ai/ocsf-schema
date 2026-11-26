@@ -8,6 +8,10 @@
       "description": "Unique idenifier for the event",
       "group": "primary",
       "requirement": "required"
+    },
+    "connection_id": {
+      "group": "context",
+      "requirement": "optional"
     }
   }
 }

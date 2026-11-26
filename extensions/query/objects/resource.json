@@ -82,6 +82,12 @@
             "requirement": "required",
             "caption": "Record ID",
             "type": "string_t"
+        },
+        "connection_id": {
+            "group": "context",
+            "requirement": "optional",
+            "caption": "Connection ID",
+            "type": "string_t"
         }
     },
     "@deprecated": {

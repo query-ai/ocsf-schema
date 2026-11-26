@@ -3,6 +3,15 @@
 	"caption": "Unmapped",
 	"description": "The Unmapped object contains an unmapped datum along with a label and type.",
 	"attributes": {
+		"record_id": {
+			"description": "Unique identifier for the object",
+			"group": "primary",
+			"requirement": "required"
+		},
+		"connection_id": {
+			"group": "context",
+			"requirement": "optional"
+		},
 		"type": {
 			"requirement": "required",
 			"description": "The type of data that is unmapped."
