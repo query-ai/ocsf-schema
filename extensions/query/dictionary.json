@@ -4,7 +4,7 @@
   "name": "dictionary",
   "attributes": {
     "connection_id": {
-      "description": "Identifier of the connection the record was fetched from. Set by the executor, not by the data source.",
+      "description": "Identifier of the connection the record was fetched from. Set by QueryAI, not by the data source.",
       "caption": "Connection ID",
       "type": "string_t"
     },
